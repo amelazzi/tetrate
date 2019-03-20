@@ -10,9 +10,9 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import styled from 'styled-components'
 
-import Header from "./header"
-import GlobalStyles from '../styles/globalStyles'
-import "./layout.css"
+import Header from "../header"
+import Footer from '../footer'
+import GlobalStyles from '../../styles/globalStyles'
 
 
 const ChildContainer = styled.div`
@@ -36,6 +36,7 @@ const Layout = ({ children }) => (
         <ChildContainer>
             <main>{children}</main>
         </ChildContainer>
+        <Footer/>
         <GlobalStyles/>
       </>
     )}

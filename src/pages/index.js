@@ -1,14 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
+import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>hello from Home</h1>
-    <Link to="/page-2/">Go to page 2</Link>
+    <SEO title="Home" keywords={[`tetrate`, `application`, `react`]} />
   </Layout>
 )
 

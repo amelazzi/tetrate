@@ -5,9 +5,8 @@ import styled from 'styled-components'
 import { darkBleu, bleu } from '../styles/colors'
 
 const StyledHeader = styled.div`
-    width: 100%;
-    font-size: 16px;
-    padding: 0rem 2rem;
+    font-size: 1.6rem;
+    padding: 0.2rem 4rem;
     margin: 0;
     display: flex;
     justify-content: space-between;
@@ -21,8 +20,8 @@ const StyledHeader = styled.div`
 
     nav {
         display: flex;
-        justify-content: flex-end;
         align-items: center;
+        text-transform: uppercase;
         @media (max-width: 35em) {
             background: ${darkBleu};
             flex-direction: column;
@@ -32,11 +31,14 @@ const StyledHeader = styled.div`
     }
 
     a {
-        padding: 0.8rem;
+        padding: 0.8rem 2rem;
+        :last-child{
+            padding-right: 0;
+        }
         position: relative;
         text-decoration: none;
-        font-weight: bold;
         color: ${darkBleu};
+        font-weight: 600;
 
         &:hover{
             color: ${bleu};
@@ -52,7 +54,7 @@ const StyledLogo = styled.div`
 `;
 
 const LogoContainer = styled.div`
-    width: 10rem;
+    width: 19rem;
     img{
         width: 100%;
         object-fit: cover;
@@ -64,7 +66,7 @@ const Header = () => {
         <StyledHeader>
             <StyledLogo>
                 <LogoContainer>
-                    <img src={require("../images/logo-text-right.png")} />
+                    <img src={require("../images/logo/logo-text-right.png")} />
                 </LogoContainer>
             </StyledLogo>
             <nav>
