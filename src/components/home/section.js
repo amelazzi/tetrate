@@ -31,20 +31,20 @@ const StyledSection = styled.div`
 `;
 
 const ImgContainer = styled.div`
-    width: 20rem;
-    margin-top: 2rem;
+    width: 24rem;
+    margin-top: 3rem;
     img{
         width: 100%;
         object-fit: cover;
     }
 `;
 
-const Section = () => (
+const Section = ({title, content, picture}) => (
     <StyledSection>
-        <h1> Intelligent Traffic Management </h1>
-        <p> Enhance reliability with dynamic, QoS-aware, decentralized routing controls. </p>
+        <h1> {title} </h1>
+        <p> {content} </p>
         <ImgContainer>
-            <img src={require("../../images/home/intelligent-traffic-management.png")} />
+            <img src={picture} />
         </ImgContainer>
     </StyledSection>
 )

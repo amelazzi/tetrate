@@ -49,6 +49,7 @@ const LogoContainer = styled.div`
 
 const SectionContainer = styled.div`
     background: ${lightBleu};
+    box-shadow: 0 -5px 5px -5px ${lightBleu};
     width: 100%;
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
