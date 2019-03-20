@@ -7,14 +7,13 @@ const backgroundImg = require("../../images/home/head-background.png")
 
 const StyledHead = styled.div`
     background-image: url(${backgroundImg});
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    padding-bottom: 8rem;
 
     h1{
         margin-top: 2rem !important;
@@ -54,6 +53,7 @@ const SectionContainer = styled.div`
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
 
+    margin-top: 6rem;
     padding: 4rem 0rem;
 `;
 
