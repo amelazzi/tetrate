@@ -65,8 +65,8 @@ const SocialMedia = styled.div`
 `;
 
 const IconContainer = styled.div`
-    width: 3.5rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2rem;
     background: ${bleu};
     margin: 1rem;
     padding: 0.8rem;

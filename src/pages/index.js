@@ -5,11 +5,14 @@ import SEO from "../components/seo"
 
 import styled from 'styled-components'
 import Slider from 'react-styled-carousel'
+import { lightBleu } from "../styles/colors"
 
 import Head from "../components/home/head"
 import Section from '../components/home/section'
 import Team from '../components/home/team'
 import Testimony from '../components/home/testimony'
+import Article from '../components/home/article'
+
 
 const Sections = styled.div`
     display: grid;
@@ -24,6 +27,16 @@ const StyledSlider = styled(Slider)`
 const Testimonies = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
+`;
+
+const Articles = styled.div`
+    background: ${lightBleu};
+    padding: 4rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 `;
 
 const IndexPage = () => (
@@ -76,6 +89,20 @@ const IndexPage = () => (
                 logo={require("../images/home/testimonies/intel.jpg")}/>
         </Testimonies>
     </StyledSlider>
+    <Articles>
+        <Article picture={require("../images/home/resources-paper-and-guides-graphic.jpg")}
+            type="PAPERS & GUIDES"
+            title="Introducing getEnvoy"
+            content="Tetrate provides certified, tested builds of Envoy proxy"/>
+        <Article picture={require("../images/home/resources-paper-and-guides-graphic.jpg")} 
+            type="PAPERS & GUIDES"
+            title="Case Study: NAV’s Istio Deployment with Tetrate"
+            content="See how Tetrate helps the Norwegian Labour and Welfare Administration (NAV) operationalize Istio."/>
+        <Article picture={require("../images/home/graphic-resources-events-servicemeshday.jpg")}
+            type="EVENTS"
+            title="Service Mesh Day Conference"
+            content="Join the first ever industry conference on Service Mesh Technology"/>
+    </Articles>
   </Layout>
 )
 
