@@ -12,6 +12,7 @@ import Section from '../components/home/section'
 import Team from '../components/home/team'
 import Testimony from '../components/home/testimony'
 import Article from '../components/home/article'
+import Footer from '../components/home/footer'
 
 
 const Sections = styled.div`
@@ -103,6 +104,7 @@ const IndexPage = () => (
             title="Service Mesh Day Conference"
             content="Join the first ever industry conference on Service Mesh Technology"/>
     </Articles>
+    <Footer/>
   </Layout>
 )
 

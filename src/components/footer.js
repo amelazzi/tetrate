@@ -66,10 +66,10 @@ const SocialMedia = styled.div`
 
 const IconContainer = styled.div`
     width: 2.5rem;
-    height: 2rem;
+    height: 2.5rem;
     background: ${bleu};
     margin: 1rem;
-    padding: 0.8rem;
+    padding: 0.6rem;
 
     :hover{
         cursor: pointer;

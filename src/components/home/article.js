@@ -5,6 +5,7 @@ import { darkBleu, bleu } from '../../styles/colors';
 import { Link } from 'gatsby';
 
 const StyledArticle = styled.div`
+    position: relative;
     background: white;
     width: 32.5rem;
     height: 42rem;
@@ -42,7 +43,10 @@ const Content = styled.div`
 `;
 
 const ButtonWrap = styled.div`
+    position: absolute;
+    bottom: 2rem;
     text-align: center;
+    margin-left: -2rem;
     width: 100%;
     button{
         border: none;
