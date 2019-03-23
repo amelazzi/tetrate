@@ -23,21 +23,6 @@ const GlobalStyle = createGlobalStyle`
     margin: 2rem;
   }
 
-  input:focus{
-      outline: none
-  }
-
-  ::placeholder, input[type="text"],input[type="email"], input[type="password"]{
-      font-size: 2.2rem;
-      padding-bottom: 1rem;
-      color: ${darkBleu};
-  }
-
-  input[type="text"], input[type="email"], input[type="password"]{
-      border: none;
-      border-bottom: 1px solid ${darkBleu};
-  }
-
 `;
 
 export default GlobalStyle;

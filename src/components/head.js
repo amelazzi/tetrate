@@ -2,10 +2,8 @@ import React from "react"
 
 import styled from 'styled-components'
 
-const background = require("../../images/resources/background.jpg")
-
 const StyledHead = styled.div`
-    background-image: url(${background});
+    background-image: url(${props=>props.background});
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0rem -12rem;
@@ -27,10 +25,10 @@ const StyledHead = styled.div`
     }
 `;
 
-const Head = () => (
-  <StyledHead>
-    <h1> Resources </h1>
-    <h2> Explore Tetrate’s Library of Resources </h2>
+const Head = ({background, title, subTitle}) => (
+  <StyledHead background={background}>
+    <h1> {title} </h1>
+    <h2> {subTitle} </h2>
   </StyledHead>
 )
 

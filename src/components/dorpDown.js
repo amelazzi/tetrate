@@ -40,7 +40,7 @@ const StyledButton = styled(Button)`
 
 const StyledDropdownMenu = styled(DropdownMenu)`
     background: ${lightBleu};
-    margin-top: 1.8rem !important;
+    margin-top: 1.6rem !important;
     padding: 0;
     border: none;
     border-radius: 0px;

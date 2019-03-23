@@ -35,7 +35,7 @@ const StyledHeader = styled.div`
     }
 
     a {
-        padding: 0.8rem 1.8rem;
+        padding: 0.8rem 1.6rem;
         :last-child{
             padding-right: 0;
         }
@@ -58,7 +58,7 @@ const StyledLogo = styled.div`
 `;
 
 const LogoContainer = styled.div`
-    width: 19rem;
+    width: 18rem;
     img{
         width: 100%;
         object-fit: cover;
@@ -117,6 +117,8 @@ const AbtUs = AboutUs.map((ab)=>
     </StyledDropdownItem>
 );
 
+/*-----------------------------  Component ---------------------------*/
+
 const Header = () => {
     return(
         <StyledHeader>
@@ -131,7 +133,7 @@ const Header = () => {
                 <Link to="/resources"> Resources </Link>
                 <Link to="/"> Blog </Link>
                 <SimpleDropDown text='About Us' args={AbtUs} />
-                <Link to="/"> Contact </Link>
+                <Link to="/contact"> Contact </Link>
             </nav>
         </StyledHeader>
     );
