@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import styled from 'styled-components'
 
@@ -52,7 +51,7 @@ const ImgContainer = styled.div`
 const Member = ({picture, name, job, detail}) => (
     <StyledSection>
         <ImgContainer>
-            <img src={picture} />
+            <img src={picture} alt='profile' />
         </ImgContainer>
         <p> {name} </p>
         <p> {job} </p>

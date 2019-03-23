@@ -71,7 +71,7 @@ const StyledLink = styled(Link)`
 const Article = ({picture, type, title, content}) => {
     return(
         <StyledArticle>
-            <img src={picture} />
+            <img src={picture} alt='icon'/>
             <Content>
                 <h2> {type} </h2>
                 <h1> {title} </h1>

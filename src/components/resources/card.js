@@ -73,7 +73,7 @@ const StyledLink = styled(Link)`
 const Card = ({picture, type, title, content}) => {
     return(
         <StyledArticle>
-            <img src={picture} />
+            <img src={picture} alt='article icon' />
             <Content>
                 <h2> {type} </h2>
                 <h1> {title} </h1>

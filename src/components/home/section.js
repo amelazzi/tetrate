@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+
 
 import styled from 'styled-components'
 
@@ -44,7 +44,7 @@ const Section = ({title, content, picture}) => (
         <h1> {title} </h1>
         <p> {content} </p>
         <ImgContainer>
-            <img src={picture} />
+            <img src={picture} alt='background' />
         </ImgContainer>
     </StyledSection>
 )

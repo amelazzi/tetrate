@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import { darkBleu, lightBleu, bleu } from '../styles/colors';
+import { darkBleu, bleu } from '../styles/colors';
 
 
 const StylesFooter = styled.div`
@@ -117,22 +117,22 @@ const Footer = () => {
             <SocialMedia>
                 <IconContainer>
                     <Link to='/'> 
-                        <img src={require("../images/social-media/twitter.png")} /> 
+                        <img src={require("../images/social-media/twitter.png")} alt='twitter'/> 
                     </Link>
                 </IconContainer>
                 <IconContainer>
                     <Link to='/'> 
-                        <img src={require("../images/social-media/github.png")} /> 
+                        <img src={require("../images/social-media/github.png")} alt='github' /> 
                     </Link>
                 </IconContainer>
                 <IconContainer>
                     <Link to='/'> 
-                        <img src={require("../images/social-media/linkedIn.png")} /> 
+                        <img src={require("../images/social-media/linkedIn.png")} alt='linkedin' /> 
                     </Link>
                 </IconContainer>
                 <IconContainer>
                     <Link to='/'> 
-                        <img src={require("../images/social-media/email.png")} /> 
+                        <img src={require("../images/social-media/email.png")} alt='email'/> 
                     </Link>
                 </IconContainer>
             </SocialMedia>

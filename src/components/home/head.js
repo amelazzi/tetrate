@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+
 import styled from 'styled-components'
 import { bleu, lightBleu } from '../../styles/colors';
 
@@ -75,7 +75,7 @@ const Head = () => {
     return(
         <StyledHead>
             <LogoContainer>
-                <img src={require("../../images/logo/logo.png")} />
+                <img src={require("../../images/logo/logo.png")} alt='logo'/>
             </LogoContainer>
             <h1> Entreprise ready service mesh </h1>
             <h2> for any workland on any environment </h2>

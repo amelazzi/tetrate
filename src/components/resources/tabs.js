@@ -74,7 +74,7 @@ class Tabs extends Component {
                         Events </button>
                 </TabsBtn>
                 <div>
-                    {this.state.activeTab == 1 ? (
+                    {this.state.activeTab === 1 ? (
                         <TabsContent>
                             <Card picture={require("../../images/home/graphic-resources-events-servicemeshday.jpg")}
                                 type="EVENTS"
@@ -84,7 +84,7 @@ class Tabs extends Component {
                                 type="EVENTS"
                                 title="Service Mesh Day Conference"
                                 content="Join the first ever industry conference on Service Mesh Technology"/>
-                        </TabsContent>) : this.state.activeTab == 2?
+                        </TabsContent>) : this.state.activeTab === 2?
                         (<TabsContent>
                             <Card picture={require("../../images/home/graphic-resources-events-servicemeshday.jpg")}
                                 type="EVENTS"
@@ -94,7 +94,7 @@ class Tabs extends Component {
                                 type="EVENTS"
                                 title="Service Mesh Day Conference"
                                 content="Join the first ever industry conference on Service Mesh Technology"/>
-                        </TabsContent>):this.state.activeTab == 3?
+                        </TabsContent>):this.state.activeTab === 3?
                         ( <TabsContent>
                             <Card picture={require("../../images/home/graphic-resources-events-servicemeshday.jpg")}
                                 type="EVENTS"

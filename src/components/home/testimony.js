@@ -49,7 +49,7 @@ const Testimony = ({content1, content2, strong, name, logo}) => {
             </p>
             <span> {name} </span>
             <ImgContainer>
-                <img src={logo} />
+                <img src={logo} alt="Profile" />
             </ImgContainer>
         </StyledSection>
     );

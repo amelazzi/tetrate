@@ -1,11 +1,15 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
+import { DropdownItem } from 'styled-dropdown-component'
 
-import { darkBleu, bleu } from '../styles/colors'
+import { darkBleu, bleu, blue } from '../styles/colors'
+
+import SimpleDropDown from './dorpDown'
 
 const StyledHeader = styled.div`
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
     padding: 0.2rem 4rem;
     margin: 0;
     display: flex;
@@ -31,7 +35,7 @@ const StyledHeader = styled.div`
     }
 
     a {
-        padding: 0.8rem 2rem;
+        padding: 0.8rem 1.8rem;
         :last-child{
             padding-right: 0;
         }
@@ -61,20 +65,72 @@ const LogoContainer = styled.div`
     }
 `;
 
+
+const StyledDropdownItem = styled(DropdownItem)`
+    padding: 1.5rem;
+    color: ${darkBleu};
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: none;
+    white-space: nowrap;
+    transition: .3s ease-in-out;
+
+    :hover{
+        background: ${blue};
+        cursor: pointer;
+        color: ${darkBleu};
+    }
+`;
+ 
+const StyledLink = styled(Link)`
+    padding: 0 !important;
+    margin: 0;
+    text-decoration: none;
+    font-weight: 400 !important;
+    :hover{
+        color: ${darkBleu} !important;
+    }
+`;
+
+/*----------------------------- Variables ---------------------------*/
+const Community = [
+    {name: "Apache Skywalking", link:'/'},
+    {name: "GetEnvoy", link:'/'},
+    {name: "Tetrate Istio Cloud Map Operator", link:'/'}
+];
+
+const Com = Community.map((cm)=>
+    <StyledDropdownItem key={cm.name} >
+        <StyledLink to={cm.link}> {cm.name} </StyledLink>
+    </StyledDropdownItem>
+);
+
+const AboutUs = [
+    {name: "Team", link:'/'},
+    {name: "Careers", link:'/'},
+    {name: "News", link:'/'}
+];
+
+const AbtUs = AboutUs.map((ab)=>
+    <StyledDropdownItem key={ab.name} >
+        <StyledLink to={ab.link}> {ab.name} </StyledLink>
+    </StyledDropdownItem>
+);
+
 const Header = () => {
     return(
         <StyledHeader>
             <StyledLogo>
                 <LogoContainer>
-                    <img src={require("../images/logo/logo-text-right.png")} />
+                    <img src={require("../images/logo/logo-text-right.png")} alt='logo'/>
                 </LogoContainer>
             </StyledLogo>
             <nav>
                 <Link to="/"> Home </Link>
-                <Link to="/"> Community </Link>
+                <SimpleDropDown text='Community' args={Com} />
                 <Link to="/resources"> Resources </Link>
                 <Link to="/"> Blog </Link>
-                <Link to="/"> About us </Link>
+                <SimpleDropDown text='About Us' args={AbtUs} />
                 <Link to="/"> Contact </Link>
             </nav>
         </StyledHeader>
