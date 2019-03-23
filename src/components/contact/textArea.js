@@ -2,8 +2,9 @@ import React from "react"
 import styled from 'styled-components'
 import { bleu } from "../../styles/colors";
 
-const StyledInput = styled.input`
+const StyledTextArea = styled.textarea`
     width: 100%;
+    height: 18rem;
     padding: 1.6rem;
     box-sizing: border-box;
     border: 1px solid #c8c8c8;
@@ -15,7 +16,7 @@ const StyledInput = styled.input`
 
     outline: none;
 
-    ::placeholder, input[type="text"],input[type="email"]{
+    ::placeholder{
       font-size: 1.6rem;
       color: black;
       opacity: 0.6;
@@ -27,10 +28,10 @@ const StyledInput = styled.input`
     }
 `;
 
-const Input = ({type, placeholder}) => (
+const TextArea = ({placeholder}) => (
     <>
-        <StyledInput type={type} placeholder={placeholder}/>
+        <StyledTextArea placeholder={placeholder}/>
     </>
 )
 
-export default Input
+export default TextArea

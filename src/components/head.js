@@ -8,7 +8,7 @@ const StyledHead = styled.div`
     background-repeat: no-repeat;
     background-position: 0rem -12rem;
 
-    padding: 8rem 4rem;
+    padding: 7rem 4rem;
 
     h1{
         color: white;
