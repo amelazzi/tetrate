@@ -10,10 +10,6 @@ import {
 import { lightBleu, darkBleu, bleu } from '../styles/colors';
 
 
-const StyledDropDown = styled(Dropdown)`
-    z-index: 0;
-`;
-
 const StyledButton = styled(Button)`
     background: none;
     border: none;

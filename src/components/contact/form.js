@@ -2,7 +2,6 @@ import React from "react"
 import styled from 'styled-components'
 
 import Input from './input'
-import SelectOption from './selectOption'
 import SimpleCheckBox from './checkBox'
 import TextArea from './textArea'
 
