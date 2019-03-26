@@ -10,8 +10,8 @@ import Head from '../components/careers/head'
 import LeftCareer from '../components/careers/leftCareer'
 import RightCareer from '../components/careers/rightCareer'
 import Value from '../components/careers/value'
+import Intro from '../components/careers/intro'
 import Article from '../components/careers/article'
-import { cpus } from "os";
 
 
 
@@ -91,6 +91,7 @@ const Careers = () => (
                 </Values>
             </ValuesContainer>
             <ArticlesContainer>
+                <Intro/>
                 <Article title="Product Manager" 
                     resume="Distill and abstract the complexity of raw Cloud infrastructure, network and distributed systems to create a simple, elegant, visually pleasing product experiences for developers, operators, network admins and security professionals."/>
             </ArticlesContainer>
