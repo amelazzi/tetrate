@@ -6,16 +6,15 @@ import { Link } from 'gatsby';
 const StyledArticle = styled.div`
     display: flex;
     flex-direction: column;
-    margin: 2rem 4rem;
+    margin: 0rem 4rem;
     padding: 4rem 0rem; 
     text-align: left;
     border-top: 2px solid lightgray;
     
     h1{
         margin: 0;
-        padding-top: 1rem;
         font-size: 2.5rem;
-        font-weight: 400;
+        font-weight: 300;
     }
     span{
         color: ${darkBleu};
