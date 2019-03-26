@@ -10,6 +10,7 @@ const StyledFooter = styled.div`
     background-image: url(${background});
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 0rem;
 
     text-align: center;
     padding: 3rem;

@@ -10,7 +10,7 @@ const StyledHead = styled.div`
     background-image: url(${background});
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0rem -12rem;
+    background-position: 0rem;
 
     padding: 8rem 4rem;
 

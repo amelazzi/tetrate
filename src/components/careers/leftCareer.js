@@ -10,7 +10,7 @@ const StyledCareer = styled.div`
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 4rem;
+    padding: 4rem 8rem;
 
     p{
         color: black;
@@ -50,7 +50,6 @@ const Content = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
     margin-left: 4rem;
     padding-right: 6rem;
 `;
