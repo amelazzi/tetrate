@@ -66,7 +66,7 @@ const IconContainer = styled.div`
     width: 2rem;
     height: 2rem;
     background: lightgray;
-    margin: 0.5rem;
+    margin: 1rem 0.5rem;
     padding: 0.5rem;
 
     :first-child{
@@ -85,11 +85,8 @@ const IconContainer = styled.div`
     }
 `;
 
-const LeftCareer = ({picture, career, name, role, detail, github, linkedin}) => (
+const RightCareer = ({picture, career, name, role, detail, github, linkedin}) => (
   <StyledCareer >
-        <ProfilePic>
-            <img src={picture} alt="profile" />
-        </ProfilePic>
         <Content>
             <p> "{career}" </p>
             <p> <b> {name}, {role} </b> {detail} </p>
@@ -106,7 +103,10 @@ const LeftCareer = ({picture, career, name, role, detail, github, linkedin}) => 
                 </IconContainer>
             </SocialMedia>
         </Content>
+        <ProfilePic>
+            <img src={picture} alt="profile" />
+        </ProfilePic>
   </StyledCareer>
 )
 
-export default LeftCareer
+export default RightCareer
