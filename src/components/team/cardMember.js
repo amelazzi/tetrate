@@ -94,7 +94,7 @@ const IconContainer = styled.div`
 
 
 
-const CardMember = ({picture, name, role, detail, github, likedin}) => (
+const CardMember = ({picture, name, role, detail, github, linkedin}) => (
     <StyltedCArd>
         <img src={require("../../images/team/member-bg.png")} alt='member background' />
         <ProfilePic>
@@ -105,13 +105,13 @@ const CardMember = ({picture, name, role, detail, github, likedin}) => (
         <p> {detail} </p>
         <SocialMedia>
             <IconContainer>
-                <Link to='/'> 
-                    <img src={github} alt='github'/> 
+                <Link to={github}> 
+                    <img src={require("../../images/social-media/github-white.png")} alt='github'/> 
                 </Link>
             </IconContainer>
             <IconContainer>
-                <Link to='/'> 
-                    <img src={likedin} alt='linkedin' /> 
+                <Link to={linkedin}> 
+                    <img src={require("../../images/social-media/linkedin-white.png")} alt='linkedin' /> 
                 </Link>
             </IconContainer>
         </SocialMedia>
