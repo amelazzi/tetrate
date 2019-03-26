@@ -41,12 +41,12 @@ const StyledLink = styled(Link)`
     color: white;
 `;
 
-const SubFooter = () => {
+const SubFooter = ({title, content, link }) => {
     return(
         <StyledFooter>
-            <h1> Join the Movement. Adopt Service Mesh. </h1>  
-            <StyledLink to='/'>
-                <button> Request a Preview </button>
+            <h1> {title} </h1>  
+            <StyledLink to={link}>
+                <button> {content} </button>
             </StyledLink>
         </StyledFooter>
     );
