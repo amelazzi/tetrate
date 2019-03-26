@@ -2,6 +2,7 @@ import React from "react"
 
 import styled from 'styled-components'
 import { green, bleu } from "../../styles/colors";
+import { Link } from "gatsby";
 
 const background = require("../../images/careers/head-background.jpg")
 
@@ -26,6 +27,9 @@ const StyledHead = styled.div`
         margin: 0;
         margin-top: 2rem;
     }
+`;
+
+const StyledLink = styled(Link)`
 	button{
 		border: none;
 		background: ${green};
@@ -47,9 +51,11 @@ const Head = ({background}) => (
   <StyledHead background={background}>
     <h1> Careers </h1>
     <h2> Join the Team that's Redefining Modern Application Networking </h2>
-    <button>
-        See Our Opennings
-    </button>
+	<StyledLink to='/'>
+		<button>
+			See Our Opennings
+		</button>
+	</StyledLink>
   </StyledHead>
 )
 
