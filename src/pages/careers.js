@@ -4,12 +4,15 @@ import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
 
 import styled from 'styled-components'
+import { bleu } from "../styles/colors"
 
 import Head from '../components/careers/head'
 import LeftCareer from '../components/careers/leftCareer'
 import RightCareer from '../components/careers/rightCareer'
 import Value from '../components/careers/value'
-import { bleu } from "../styles/colors";
+import Article from '../components/careers/article'
+import { cpus } from "os";
+
 
 
 const Content = styled.div`
@@ -20,6 +23,13 @@ const CareersContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+`;
+
+const StyledH1 = styled.h1`
+    text-align: center;
+    color: ${bleu};
+    font-weight: 400;
+    margin-bottom: 4rem;
 `;
 
 const ValuesContainer = styled.div`
@@ -36,6 +46,11 @@ const Values = styled.div`
     :last-child{
         border: none;
     }
+`;
+
+const ArticlesContainer = styled.div`
+    display: flex;
+    flex-direction: column;
 `;
 
 const Careers = () => (
@@ -60,6 +75,7 @@ const Careers = () => (
                     github="https://github.com/ZackButcher"
                     linkedin="https://www.linkedin.com/in/zachary-butcher-339a2180/"/>
             </CareersContainer>
+            <StyledH1> Core Values </StyledH1>
             <ValuesContainer>
                 <Values>
                     <Value title="Open Ethos"
@@ -74,6 +90,10 @@ const Careers = () => (
                         content="We set personal ego aside to be in service of what is best for Tetrate, and act as citizens able to put collective interest above our own. We look out for teammates. Best processes and products follow naturally from addressing the needs of others."/>
                 </Values>
             </ValuesContainer>
+            <ArticlesContainer>
+                <Article title="Product Manager" 
+                    resume="Distill and abstract the complexity of raw Cloud infrastructure, network and distributed systems to create a simple, elegant, visually pleasing product experiences for developers, operators, network admins and security professionals."/>
+            </ArticlesContainer>
         </Content>
     </Layout>
 )
