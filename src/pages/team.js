@@ -8,6 +8,7 @@ import { bleu } from "../styles/colors"
 
 import Head from '../components/head'
 import CardMember from '../components/team/cardMember'
+import Investor from '../components/team/investor'
 
 const Content = styled.div`
     display: flex;
@@ -23,7 +24,7 @@ const StyledH1 = styled.h1`
     margin: 4rem;
 `;
 
-const MembersContainer = styled.div`
+const CardsContainer = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -67,6 +68,18 @@ const Member = Members.map((mbr) =>
         detail={mbr.detail} github={mbr.github} linkedin={mbr.linkedin} />
 );
 
+
+const Investors = [
+    {logo: require("../images/team/investor/dell.jpg"), link: 'https://www.delltechnologies.com/en-us/capital.htm'},
+    {logo: require("../images/team/investor/intel.jpg"), link: 'http://www.intelcapital.com'},
+    {logo: require("../images/team/investor/samsung-next.jpg"), link: 'https://samsungnext.com'},
+    {logo: require("../images/team/investor/8vc.png"), link: 'https://8vc.com'}
+];
+
+const Invest = Investors.map((invst)=>
+    <Investor key={invst.logo} logo={invst.logo} link={invst.link} />
+);
+
 const Team = () => (
   <Layout>
     <SEO title="Contact" />
@@ -75,19 +88,20 @@ const Team = () => (
         subTitle='Our Team Is Global and Our Culture Is Borderless'/>
     <Content>
         <StyledH1> Team Members </StyledH1>
-        <MembersContainer>
+        <CardsContainer>
             {Member}
-        </MembersContainer>
+        </CardsContainer>
         <StyledH1> Tetrate Advisors </StyledH1>
-        <MembersContainer>
+        <CardsContainer>
             {Member}
-        </MembersContainer>
+        </CardsContainer>
         <StyledH1> Tetrate Investors </StyledH1>
-        <MembersContainer>
-            {Member}
-        </MembersContainer>
+        <CardsContainer>
+            {Invest}
+        </CardsContainer>
     </Content>
   </Layout>
 )
 
 export default Team
+

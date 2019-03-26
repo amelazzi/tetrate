@@ -1,10 +1,10 @@
 import React from 'react'
 
 import styled from 'styled-components'
-import { darkBleu, bleu } from '../../styles/colors';
+import { darkBleu, bleu } from '../styles/colors';
 import { Link } from 'gatsby';
 
-const background = require("../../images/home/footer-background.jpg")
+const background = require("../images/home/footer-background.jpg")
 
 const StyledFooter = styled.div`
     background-image: url(${background});
@@ -41,7 +41,7 @@ const StyledLink = styled(Link)`
     color: white;
 `;
 
-const Footer = () => {
+const SubFooter = () => {
     return(
         <StyledFooter>
             <h1> Join the Movement. Adopt Service Mesh. </h1>  
@@ -52,4 +52,4 @@ const Footer = () => {
     );
 }
 
-export default Footer;
+export default SubFooter;

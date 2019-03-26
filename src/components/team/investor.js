@@ -1,8 +1,31 @@
 import React from "react"
+import { Link } from 'gatsby'
 
-const Investor = ({picture}) => (
-    <>
-    </>
+import styled from 'styled-components'
+
+const ImgContainer = styled.div`
+    max-width: 28.5rem;
+    max-height: 28.5rem;
+    min-width: 28.5rem;
+    min-height: 28.5rem;
+
+    margin: 1rem;
+    margin-top: -4rem;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+`;
+
+const Investor = ({logo, link}) => (
+    <ImgContainer>
+        <Link to={link}>
+            <img src={logo} alt='investor'/>
+        </Link>
+    </ImgContainer>
 )
 
 export default Investor
+
