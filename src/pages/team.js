@@ -9,6 +9,8 @@ import { bleu } from "../styles/colors"
 import Head from '../components/head'
 import CardMember from '../components/team/cardMember'
 import Investor from '../components/team/investor'
+import SubFooter from '../components/subFooter'
+
 
 const Content = styled.div`
     display: flex;
@@ -100,6 +102,7 @@ const Team = () => (
             {Invest}
         </CardsContainer>
     </Content>
+    <SubFooter title="Interested in a Career with Tetrate?"  content="Submit a Resume" link='/'/>
   </Layout>
 )
 
