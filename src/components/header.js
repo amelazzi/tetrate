@@ -108,7 +108,7 @@ const Com = Community.map((cm)=>
 const AboutUs = [
     {name: "Team", link:'/team'},
     {name: "Careers", link:'/careers'},
-    {name: "News", link:'/'}
+    {name: "News", link:'/news'}
 ];
 
 const AbtUs = AboutUs.map((ab)=>
