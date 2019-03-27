@@ -1,10 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import styled from 'styled-components'
-import { green, bleu } from "../../styles/colors"
-
-
 
 const StyledIntro = styled.div`
     padding: 4rem 10rem;

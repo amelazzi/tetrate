@@ -8,14 +8,11 @@ import styled from 'styled-components'
 
 import Head from '../components/apache-skywalking/head'
 import Intro from '../components/apache-skywalking/intro'
+import Diagram from '../components/apache-skywalking/diagram'
 
 const Content = styled.div`
-    padding: 0rem 16rem;
+    padding: 0rem 14rem;
     padding-bottom: 4rem;
-`;
-
-const StyledHr = styled.hr`
-  border: 1px solid lightgray;
 `;
 
 const ApacheSkyWalking = () => (
@@ -27,7 +24,7 @@ const ApacheSkyWalking = () => (
         <Intro content1="Apache SkyWalking is an Observalibity Analysis and Application Performance Management platform."
             content2="Incubated by Apache, Skywalking provides distributed tracing, service mesh telemetry analysis, metric aggregation and visualization for cloud native workloads."
             content3="The project founder is Tetrate's Sheng Wu."/>
-        <StyledHr/>
+        <Diagram/>
     </Content>
   </Layout>
 )
