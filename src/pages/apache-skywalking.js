@@ -11,6 +11,7 @@ import Intro from '../components/apache-skywalking/intro'
 import Diagram from '../components/apache-skywalking/diagram'
 import Card from '../components/apache-skywalking/card'
 import { bleu, darkBleu } from "../styles/colors";
+import SubFooter from "../components/apache-skywalking/subFooter"
 
 const Content = styled.div`
     padding: 0rem 14rem;
@@ -93,6 +94,7 @@ const ApacheSkyWalking = () => (
           </StyledLink>
         </BtnContainer>
     </Content>
+    <SubFooter/>
   </Layout>
 )
 
