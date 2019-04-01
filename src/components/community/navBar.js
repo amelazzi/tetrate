@@ -45,7 +45,7 @@ const NavBar = () => (
         <Link to="/apache-skywalking"> Apache Skywalking </Link>
         <Link to="/getenvoy"> GetEnvoy </Link>
         <Link to="/tetrate-cloud-map"> Tetrate Istio Cloud Map Operator </Link>
-        <Link to="/"> Tetrate Q </Link>
+        <Link to="/tetrateq"> Tetrate Q </Link>
     </StyledNavBar>
 )
 

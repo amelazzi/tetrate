@@ -96,7 +96,8 @@ const StyledLink = styled(Link)`
 const Community = [
     {name: "Apache Skywalking", link:'/apache-skywalking'},
     {name: "GetEnvoy", link:'/getenvoy'},
-    {name: "Tetrate Istio Cloud Map Operator", link:'/tetrate-cloud-map'}
+    {name: "Tetrate Istio Cloud Map Operator", link:'/tetrate-cloud-map'},
+    {name: "Tetrate Q", link:'/tetrateq'}
 ];
 
 const Com = Community.map((cm)=>

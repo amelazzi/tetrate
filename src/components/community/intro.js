@@ -7,7 +7,7 @@ const StyledIntro = styled.div`
     text-align: center;
     p{
         color: gray;
-        font-size: 2.2rem;
+        font-size: 2.3rem;
         font-weight: 200;
         padding: 0rem 8rem;
         :first-child{

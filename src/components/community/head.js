@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import styled from 'styled-components'
-import { green, bleu } from "../../styles/colors"
+import { bleu } from "../../styles/colors"
 
 import NavBar from './navBar'
 
@@ -34,7 +34,7 @@ const StyledHead = styled.div`
 const StyledLink = styled(Link)`
 	button{
 		border: none;
-		background: ${green};
+		background: ${props=>props.aboutColor};
 		color: white;
 		font-size: 1.6rem;
 		letter-spacing: 0.1rem;
@@ -50,11 +50,11 @@ const StyledLink = styled(Link)`
 	}
 `;
 
-const Head = ({background, title, subTitle, about}) => (
+const Head = ({background, title, subTitle,aboutColor, about}) => (
   <StyledHead background={background}>
     <h1> {title} </h1>
     <h2> {subTitle} </h2>
-    <StyledLink to='/contact'>
+    <StyledLink to='/contact' aboutColor={aboutColor}>
       <button>
         Contact Us about {about}
       </button>

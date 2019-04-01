@@ -5,7 +5,7 @@ import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
 
 import styled from 'styled-components'
-import { green, bleu, darkBleu } from "../styles/colors"
+import { purple, bleu, darkBleu } from "../styles/colors"
 
 import Head from '../components/community/head'
 import Intro from '../components/community/intro'
@@ -60,43 +60,43 @@ const StyledLink = styled(Link)`
     }
 `;
 
-const GetEnvoy = () => (
+const TetrateCloudMap = () => (
   <Layout>
-    <SEO title="getEnvoy - Envoy support for target OS platforms" />
-    <Head background={require("../images/community/getEnvoy/background.png")}
-        title="GetEnvoy"
-        subTitle="Get Certified, Compliant and Conformant Builds of Envoy"
-        aboutColor={green}
-        about="GETENVOY"/>
+    <SEO title="Tetrate Q - Access Control for Micro Services" />
+    <Head background={require("../images/community/tetrateq/background.png")}
+        title="Tetrate Q"
+        subTitle="Access control and authorization for the modern enterprise"
+        aboutColor={purple}
+        about="TETRATE Q"/>
     <Content>   
-        <Intro content1="Getting the latest and reliable Envoy build is not a trivial undertaking. Setting up a Bazel build environment is time and resource intensive. Available packages are also limited. Tetrate solves this problem by distributing tested and certified Envoy builds, for CentOS, Ubuntu, and Mac."/>
+        <Intro content1="Tetrate’s Q is a refreshing new take on access control for modern infrastructure. It is based on the state-of-the-art Next Generation Access Control (NGAC) model from NIST and provides a novel access model representation that empowers a complete authorization framework for distributed and multi-cloud architectures."/>
         <Cards>
           <Card background={require("../images/community/tetrate-tools-features-bg1.png")} 
-              icon={require("../images/community/getEnvoy/reliable.png")} 
-              title="Reliable and Tested Builds"
-              content="Effortlessly build Envoy proxy with tested and certified packages, binaries & images. No complex Bazel tooling, no manual work"/>
+              icon={require("../images/community/tetrateq/universal-policy-mgmt.png")} 
+              title="Universal Policy Management"
+              content="Supports universal access control policy definition across public and on-premises clouds. Specify once, and enforce everywhere."/>
           <Card background={require("../images/community/tetrate-tools-features-bg2.png")}
-              icon={require("../images/community/getEnvoy/multiple-os.png")} 
-              title="Support for Multiple OS"
-              content="Get the right Envoy build for your operating system, including Ubuntu, CentOS, and Mac. Available for Docker and non-Docker environments."/>
+              icon={require("../images/community/tetrateq/expressive-powerful.png")} 
+              title="Expressive & Powerful Policies"
+              content="Enables sophisticated authorization policies beyond the limitations of traditional systems such as RBAC and ABAC."/>
           <Card background={require("../images/community/tetrate-tools-features-bg1.png")}
-              icon={require("../images/community/getEnvoy/easy-to-use.png")} 
-              title="Easy to Use & Always Updated"
-              content="Deploy and update confidently with our easy-to-use install scripts specified to your target environment. Keep up with the latest updates"/>
+              icon={require("../images/community/tetrateq/standards-based.png")} 
+              title="Standards based"
+              content="Developed based on NIST's NGAC standards, Tetrate Q is easily extensible and well-suited to supporting distributed operations in a cloud environment."/>
         </Cards>
         <BtnContainer>
           <StyledLink to='/'>
-            <button> READ MORE </button>
+            <button> Read the announcement </button>
           </StyledLink>
           <StyledLink to='/'>
-            <button> SIGN UP for GETENVOY </button>
+            <button> Sign up to get Tetrate Q </button>
           </StyledLink>
         </BtnContainer>
     </Content>
     <SubFooter link1="/apache-skywalking" content1="APACHE SKYWALKING"
-      link2="/tetrate-cloud-map" content2="TETRATE ISTIO CLOUD MAP OPERATOR"
-      link3="/tetrateq" content3="TETRATE Q"/>
+      link2="/getenvoy" content2="GETENVOY"
+      link3="/tetrate-cloud-map" content3="TETRATE ISTIO CLOUD MAP OPERATOR"/>
   </Layout>
 )
 
-export default GetEnvoy
+export default TetrateCloudMap

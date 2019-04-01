@@ -10,7 +10,7 @@ import Head from '../components/community/head'
 import Intro from '../components/community/intro'
 import Diagram from '../components/community/diagram'
 import Card from '../components/community/card'
-import { bleu, darkBleu } from "../styles/colors";
+import { green, bleu, darkBleu } from "../styles/colors";
 import SubFooter from "../components/community/subFooter"
 
 const Content = styled.div`
@@ -63,10 +63,11 @@ const StyledLink = styled(Link)`
 
 const ApacheSkyWalking = () => (
   <Layout>
-    <SEO title="News & Events" />
+    <SEO title="Skywalking - Observability & App Performance Management" />
     <Head background={require("../images/community/apache-skywalking/background.jpg")}
         title="Apache Skywalking"
         subTitle="Get Service Mesh Observability and Performance Management with Skywalking"
+        aboutColor={green}
         about="APACHE SKYWALKING"/>
     <Content>   
         <Intro content1="Apache SkyWalking is an Observalibity Analysis and Application Performance Management platform."
@@ -98,7 +99,7 @@ const ApacheSkyWalking = () => (
     </Content>
     <SubFooter link1="/getenvoy" content1="GetEnvoy"
       link2="/tetrate-cloud-map" content2="TETRATE ISTIO CLOUD MAP OPERATOR"
-      link3="" content3="TETRATE Q"/>
+      link3="/tetrateq" content3="TETRATE Q"/>
   </Layout>
 )
 

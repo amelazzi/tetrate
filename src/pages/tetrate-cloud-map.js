@@ -5,7 +5,7 @@ import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
 
 import styled from 'styled-components'
-import { bleu, darkBleu } from "../styles/colors"
+import { green, bleu, darkBleu } from "../styles/colors"
 
 import Head from '../components/community/head'
 import Intro from '../components/community/intro'
@@ -62,10 +62,11 @@ const StyledLink = styled(Link)`
 
 const TetrateCloudMap = () => (
   <Layout>
-    <SEO title="News & Events" />
+    <SEO title="Istio / AWS Cloud Map - Manage Istio on AWS with Cloud Map" />
     <Head background={require("../images/community/cloud-map/background.jpg")}
         title="Tetrate Istio Cloud Map Operator"
         subTitle="Connect AWS Cloud Map with Your Istio Mesh"
+        aboutColor={green}
         about="TETRATE ISTIO CLOUD MAP OPERATOR"/>
     <Content>   
         <Intro content1="Tetrate Istio Cloud Map Operator synchronizes with AWS Cloud Map, automatically populating AWS service discovery information into Istio Service Entries. This allows services running in your Kubernetes clusters to communicate with any services registered in AWS Cloud Map, whether they are running in EKS, ECS or any other service integrated with Cloud Map."/>
@@ -94,7 +95,7 @@ const TetrateCloudMap = () => (
     </Content>
     <SubFooter link1="/apache-skywalking" content1="APACHE SKYWALKING"
       link2="/getenvoy" content2="GETENVOY"
-      link3="" content3="TETRATE Q"/>
+      link3="/tetrateq" content3="TETRATE Q"/>
   </Layout>
 )
 
