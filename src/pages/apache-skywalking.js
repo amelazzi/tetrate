@@ -61,10 +61,11 @@ const StyledLink = styled(Link)`
     }
 `;
 
-const ApacheSkyWalking = () => (
+const ApacheSkyWalking = ({location}) => (
   <Layout>
     <SEO title="Skywalking - Observability & App Performance Management" />
-    <Head background={require("../images/community/apache-skywalking/background.jpg")}
+    <Head location={location}
+        background={require("../images/community/apache-skywalking/background.jpg")}
         title="Apache Skywalking"
         subTitle="Get Service Mesh Observability and Performance Management with Skywalking"
         aboutColor={green}

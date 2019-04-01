@@ -50,7 +50,7 @@ const StyledLink = styled(Link)`
 	}
 `;
 
-const Head = ({background, title, subTitle,aboutColor, about}) => (
+const Head = ({location, background, title, subTitle,aboutColor, about}) => (
   <StyledHead background={background}>
     <h1> {title} </h1>
     <h2> {subTitle} </h2>
@@ -59,7 +59,7 @@ const Head = ({background, title, subTitle,aboutColor, about}) => (
         Contact Us about {about}
       </button>
     </StyledLink>
-    <NavBar/>
+    <NavBar location={location}/>
   </StyledHead>
 )
 

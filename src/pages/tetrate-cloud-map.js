@@ -60,10 +60,11 @@ const StyledLink = styled(Link)`
     }
 `;
 
-const TetrateCloudMap = () => (
+const TetrateCloudMap = ({location}) => (
   <Layout>
     <SEO title="Istio / AWS Cloud Map - Manage Istio on AWS with Cloud Map" />
-    <Head background={require("../images/community/cloud-map/background.jpg")}
+    <Head location={location} 
+        background={require("../images/community/cloud-map/background.jpg")}
         title="Tetrate Istio Cloud Map Operator"
         subTitle="Connect AWS Cloud Map with Your Istio Mesh"
         aboutColor={green}

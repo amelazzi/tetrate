@@ -60,10 +60,11 @@ const StyledLink = styled(Link)`
     }
 `;
 
-const GetEnvoy = () => (
+const GetEnvoy = ({location}) => (
   <Layout>
     <SEO title="getEnvoy - Envoy support for target OS platforms" />
-    <Head background={require("../images/community/getEnvoy/background.png")}
+    <Head  location={location} 
+        background={require("../images/community/getEnvoy/background.png")}
         title="GetEnvoy"
         subTitle="Get Certified, Compliant and Conformant Builds of Envoy"
         aboutColor={green}

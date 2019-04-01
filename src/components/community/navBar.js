@@ -31,7 +31,8 @@ const StyledNavBar = styled.nav`
         font-size: 1.6rem;
         font-weight: 200;
 
-        :hover{
+        &:hover,
+        &.active{
             color: white;
             cursor: pointer;
             text-decoration: none;
@@ -40,12 +41,16 @@ const StyledNavBar = styled.nav`
 `;
 
 
-const NavBar = () => (
+const NavBar = ({location}) => (
     <StyledNavBar>
-        <Link to="/apache-skywalking"> Apache Skywalking </Link>
-        <Link to="/getenvoy"> GetEnvoy </Link>
-        <Link to="/tetrate-cloud-map"> Tetrate Istio Cloud Map Operator </Link>
-        <Link to="/tetrateq"> Tetrate Q </Link>
+        <Link className={location.pathname === "/apache-skywalking" && 'active'} 
+            to="/apache-skywalking"> Apache Skywalking </Link>
+        <Link className={location.pathname === "/getenvoy" && 'active'}
+            to="/getenvoy"> GetEnvoy </Link>
+        <Link className={location.pathname === "/tetrate-cloud-map" && 'active'} 
+            to="/tetrate-cloud-map"> Tetrate Istio Cloud Map Operator </Link>
+        <Link className={location.pathname === "/tetrateq" && 'active'}
+            to="/tetrateq"> Tetrate Q </Link>
     </StyledNavBar>
 )
 

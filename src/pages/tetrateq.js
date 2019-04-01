@@ -60,10 +60,11 @@ const StyledLink = styled(Link)`
     }
 `;
 
-const TetrateCloudMap = () => (
+const TetrateQ = ({location}) => (
   <Layout>
     <SEO title="Tetrate Q - Access Control for Micro Services" />
-    <Head background={require("../images/community/tetrateq/background.png")}
+    <Head location={location}
+        background={require("../images/community/tetrateq/background.png")}
         title="Tetrate Q"
         subTitle="Access control and authorization for the modern enterprise"
         aboutColor={purple}
@@ -99,4 +100,4 @@ const TetrateCloudMap = () => (
   </Layout>
 )
 
-export default TetrateCloudMap
+export default TetrateQ
