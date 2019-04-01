@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { darkBleu, bleu } from '../../styles/colors';
-import { Link } from 'gatsby';
+import { bleu } from '../../styles/colors'
+
 
 const StyledArticle = styled.div`
     display: flex;

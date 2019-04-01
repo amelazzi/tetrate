@@ -6,12 +6,12 @@ import SEO from "../components/seo"
 
 import styled from 'styled-components'
 
-import Head from '../components/apache-skywalking/head'
-import Intro from '../components/apache-skywalking/intro'
-import Diagram from '../components/apache-skywalking/diagram'
-import Card from '../components/apache-skywalking/card'
+import Head from '../components/community/head'
+import Intro from '../components/community/intro'
+import Diagram from '../components/community/diagram'
+import Card from '../components/community/card'
 import { bleu, darkBleu } from "../styles/colors";
-import SubFooter from "../components/apache-skywalking/subFooter"
+import SubFooter from "../components/community/subFooter"
 
 const Content = styled.div`
     padding: 0rem 14rem;

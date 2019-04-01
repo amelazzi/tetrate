@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import styled from 'styled-components'
 import { green, bleu } from "../../styles/colors"
 
-import Tabs from'./tabs'
+import NavBar from './navBar'
 
 const background = require("../../images/apache-skywalking/background.jpg")
 
@@ -16,7 +16,7 @@ const StyledHead = styled.div`
 
     position: relative;
 
-    padding: 12rem 38rem 4rem 4rem;
+    padding: 12rem 38rem 10rem 4rem;
 
     h1{
         color: white;
@@ -61,7 +61,7 @@ const Head = ({background}) => (
         Contact Us about APACHE SKYWALKING
       </button>
     </StyledLink>
-    <Tabs/>
+    <NavBar/>
   </StyledHead>
 )
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { bleu, gray, darkBleu } from '../../styles/colors'
+import { bleu } from '../../styles/colors'
 
 
 const TabsBtn = styled.div`

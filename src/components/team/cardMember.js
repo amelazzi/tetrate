@@ -98,7 +98,7 @@ const CardMember = ({picture, name, role, detail, github, linkedin}) => (
     <StyltedCArd>
         <img src={require("../../images/team/member-bg.png")} alt='member background' />
         <ProfilePic>
-            <img src={picture} />
+            <img src={picture} alt="profiles" />
         </ProfilePic>
         <h1> {name} </h1>
         <h2> {role} </h2>

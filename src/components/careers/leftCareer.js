@@ -84,14 +84,14 @@ const IconContainer = styled.div`
     }
 `;
 
-const LeftCareer = ({picture, career, name, role, detail, github, linkedin}) => (
+const LeftCareer = ({picture, career, name, job, detail, github, linkedin}) => (
   <StyledCareer >
         <ProfilePic>
             <img src={picture} alt="profile" />
         </ProfilePic>
         <Content>
             <p> "{career}" </p>
-            <p> <b> {name}, {role} </b> {detail} </p>
+            <p> <b> {name}, {job} </b> {detail} </p>
             <SocialMedia>
                 <IconContainer>
                     <Link to={github}> 
