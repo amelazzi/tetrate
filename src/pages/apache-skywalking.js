@@ -96,7 +96,9 @@ const ApacheSkyWalking = () => (
           </StyledLink>
         </BtnContainer>
     </Content>
-    <SubFooter/>
+    <SubFooter link1="/getenvoy" content1="GetEnvoy"
+      link2="/tetrate-cloud-map" content2="TETRATE ISTIO CLOUD MAP OPERATOR"
+      link3="" content3="TETRATE Q"/>
   </Layout>
 )
 

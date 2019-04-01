@@ -69,7 +69,7 @@ const StyledBtn = styled(Link)`
     }
 `;
 
-const subFooter = () =>{
+const subFooter = ({link1, content1, link2, content2, link3, content3}) =>{
     return(
         <StyledSubFooter>
             <h1> Tetrate’s Commitment to Open Source </h1> 
@@ -79,14 +79,14 @@ const subFooter = () =>{
                 The open source projects listed here are the result of our continued innovation in the cloud-native space.
             </p> 
             <LinkContainer>
-                <StyledBtn to='/getenvoy'>
-                    <button> GetEnvoy </button>
+                <StyledBtn to={link1}>
+                    <button> {content1} </button>
                 </StyledBtn>
-                <StyledBtn to='/'>
-                    <button> Tetrate Istio Cloud Map Operator </button>
+                <StyledBtn to={link2}>
+                    <button> {content2} </button>
                 </StyledBtn>
-                <StyledBtn to='/'>
-                    <button> Tetrate Q </button>
+                <StyledBtn to={link3}>
+                    <button> {content3} </button>
                 </StyledBtn>
             </LinkContainer>
         </StyledSubFooter>

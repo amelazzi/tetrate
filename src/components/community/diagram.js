@@ -17,7 +17,7 @@ const StyledDiagram = styled.div`
 
 const Diagram = () => (
   <StyledDiagram>
-    <img src={require("../../images/apache-skywalking/diagram.png")} alt="diagram"/>
+    <img src={require("../../images/community/apache-skywalking/diagram.png")} alt="diagram"/>
   </StyledDiagram>
 )
 
