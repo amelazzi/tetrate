@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from 'styled-components'
-import { bleu } from '../../styles/colors';
+import { bleu, lightBleu } from '../../styles/colors';
 
 const backgroundImg = require("../../images/home/head-background.png")
 
@@ -19,7 +19,7 @@ const StyledHead = styled.div`
         background-size: 210%;
         background-position: center 0rem;
 
-        padding: 4rem 1rem;
+        padding: 4rem 0rem;
 
         h1{
             font-size: 4.2rem !important;
@@ -86,6 +86,13 @@ const SectionContainer = styled.div`
     margin-top: 14rem;
     padding: 0rem;
     padding-bottom: 4rem;
+
+    @media (max-width: 35em) {
+		display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0rem 2rem;
+    }
 `;
 
 const StyledSection = styled.div`
@@ -97,7 +104,29 @@ const StyledSection = styled.div`
         font-weight: 400;
     }
     small{
+        
         line-height: 1.6;
+    }
+
+    @media (max-width: 35em) {
+		padding: 2rem 8rem;
+        border-bottom: 2px solid #d3ebf6;
+        :first-child{
+            padding: 0rem;
+            border-bottom: none;
+        }
+        :nth-child(2){
+            padding-top: 0rem;
+        }
+
+        h3{
+            font-size: 2.6rem !important;
+            font-weight: 600 !important;
+        }
+
+        small{
+            font-size: 1.6rem !important;
+        }
     }
 `;
 
