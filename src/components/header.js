@@ -7,6 +7,8 @@ import { darkBleu, bleu, blue } from '../styles/colors'
 
 import SimpleDropDown from './dorpDown'
 
+var showMenu = 'none'
+
 const StyledHeader = styled.div`
     font-size: 1.5rem;
     letter-spacing: 0.1rem;
@@ -20,6 +22,7 @@ const StyledHeader = styled.div`
     @media (max-width: 35em) {
         flex-direction: column;
         justify-content: center;
+        padding: 0.2rem 2rem;
     }
 
     nav {
@@ -27,10 +30,10 @@ const StyledHeader = styled.div`
         align-items: center;
         text-transform: uppercase;
         @media (max-width: 35em) {
-            background: ${darkBleu};
+            background: ${bleu};
             flex-direction: column;
-            justify-content: center;
             padding-bottom: 1.5rem;
+            color: white;
         }
     }
 
@@ -48,6 +51,13 @@ const StyledHeader = styled.div`
             color: ${bleu};
             cursor: pointer;
         }
+        @media (max-width: 35em) {
+            color: white;
+            :hover{
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
     }
 `;
 
@@ -55,7 +65,9 @@ const StyledLogo = styled.div`
     margin: 0.8rem 0rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 `;
+
 
 const LogoContainer = styled.div`
     width: 18rem;
@@ -65,6 +77,25 @@ const LogoContainer = styled.div`
     }
 `;
 
+const StyledMenu = styled.div`
+    display: flex;
+    @media (max-width: 35em) {
+        flex-direction: column;
+        display: ${showMenu};
+    }
+`;
+
+const MenuIcon = styled.img`
+    display: block;
+    width: 4rem;
+    height: 2.5rem;
+    :hover{
+        cursor: pointer;
+    }
+    @media (max-width: 35em) {
+		display: block;
+    }
+`;
 
 const StyledDropdownItem = styled(DropdownItem)`
     padding: 1.5rem;
@@ -127,17 +158,33 @@ const Header = () => {
                 <LogoContainer>
                     <img src={require("../images/logo/logo-text-right.png")} alt='logo'/>
                 </LogoContainer>
+                <MenuIcon src={require("../images/menu-icon.png")} onClick={menuToggle}/>
             </StyledLogo>
-            <nav>
-                <Link to="/"> Home </Link>
-                <SimpleDropDown text='Community' args={Com} />
-                <Link to="/resources"> Resources </Link>
-                <Link to="/"> Blog </Link>
-                <SimpleDropDown text='About Us' args={AbtUs} />
-                <Link to="/contact"> Contact </Link>
-            </nav>
+            <StyledMenu>
+                <nav>
+                    <Link to="/"> Home </Link>
+                    <SimpleDropDown text='Community' args={Com} />
+                    <Link to="/resources"> Resources </Link>
+                    <Link to="/"> Blog </Link>
+                    <SimpleDropDown text='About Us' args={AbtUs} />
+                    <Link to="/contact"> Contact </Link>
+                </nav>
+            </StyledMenu>
         </StyledHeader>
     );
+}
+
+
+/*---------------------------- Function --------------------------*/
+var isShow = false
+function menuToggle(){
+	if(!isShow) {
+        showMenu = 'block'
+        isShow = true
+	}else{
+        showMenu = 'none'
+		isShow = false
+	}
 }
 
 export default Header

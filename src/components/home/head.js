@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from 'styled-components'
-import { bleu, lightBleu } from '../../styles/colors';
+import { bleu } from '../../styles/colors';
 
 const backgroundImg = require("../../images/home/head-background.png")
 
@@ -14,6 +14,32 @@ const StyledHead = styled.div`
     flex-direction: column;
     align-items: center;
 
+    @media (max-width: 35em) {
+		text-align: center;
+        background-size: 210%;
+        background-position: center 0rem;
+
+        padding: 4rem 1rem;
+
+        h1{
+            font-size: 4.2rem !important;
+            font-weight: 300 !important;
+        }
+        h2{
+            margin-top: 1rem !important;
+            font-size: 2.5rem  !important;
+            color: ${bleu};
+            font-weight: 300 !important;
+        }
+        p{
+            font-size: 2.2rem !important;
+            font-weight: bold;
+        }
+        small{
+            font-size: 1.8rem !important;
+            font-weight: 200;
+        }
+    }
 
     h1{
         margin-top: 2rem !important;
@@ -45,17 +71,21 @@ const LogoContainer = styled.div`
         width: 100%;
         object-fit: cover;
     }
+    @media (max-width: 35em) {
+		display: none;
+    }
 `;
 
 const SectionContainer = styled.div`
-    background: ${lightBleu};
-    box-shadow: 0 -5px 5px -5px ${lightBleu};
+    background: rgba(190,226,241,.8);
+    box-shadow: 0 -40px 40px 16px rgba(190,226,241,.8);
     width: 100%;
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
 
-    margin-top: 6rem;
-    padding: 4rem 0rem;
+    margin-top: 14rem;
+    padding: 0rem;
+    padding-bottom: 4rem;
 `;
 
 const StyledSection = styled.div`
@@ -78,13 +108,13 @@ const Head = () => {
                 <img src={require("../../images/logo/logo.png")} alt='logo'/>
             </LogoContainer>
             <h1> Entreprise ready service mesh </h1>
-            <h2> for any workland on any environment </h2>
+            <h2> for any workload on any environment </h2>
             <p>
                 <small> Powered by </small>
                 Envoy and Istio
             </p>
             <SectionContainer>
-                <StyledSection></StyledSection>
+                <StyledSection/>
                 <StyledSection>
                     <small> Join us at </small>
                     <h3> Service Mesh Day </h3>
