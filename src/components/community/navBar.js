@@ -42,8 +42,8 @@ const StyledNavBar = styled.nav`
 
 const NavBar = () => (
     <StyledNavBar>
-        <Link to="/"> Apache Skywalking </Link>
-        <Link to="/"> GetEnvoy </Link>
+        <Link to="/apache-skywalking"> Apache Skywalking </Link>
+        <Link to="/getenvoy"> GetEnvoy </Link>
         <Link to="/"> Tetrate Istio Cloud Map Operator </Link>
         <Link to="/"> Tetrate Q </Link>
     </StyledNavBar>

@@ -5,12 +5,11 @@ import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
 
 import styled from 'styled-components'
+import { bleu, darkBleu } from "../styles/colors"
 
 import Head from '../components/community/head'
 import Intro from '../components/community/intro'
-import Diagram from '../components/community/diagram'
 import Card from '../components/community/card'
-import { bleu, darkBleu } from "../styles/colors";
 import SubFooter from "../components/community/subFooter"
 
 const Content = styled.div`
@@ -61,38 +60,35 @@ const StyledLink = styled(Link)`
     }
 `;
 
-const ApacheSkyWalking = () => (
+const GetEnvoy = () => (
   <Layout>
     <SEO title="News & Events" />
-    <Head background={require("../images/community/apache-skywalking/background.jpg")}
-        title="Apache Skywalking"
-        subTitle="Get Service Mesh Observability and Performance Management with Skywalking"
-        about="APACHE SKYWALKING"/>
+    <Head background={require("../images/community/getEnvoy/background.png")}
+        title="GetEnvoy"
+        subTitle="Get Certified, Compliant and Conformant Builds of Envoy"
+        about="GETENVOY"/>
     <Content>   
-        <Intro content1="Apache SkyWalking is an Observalibity Analysis and Application Performance Management platform."
-            content2="Incubated by Apache, Skywalking provides distributed tracing, service mesh telemetry analysis, metric aggregation and visualization for cloud native workloads."
-            content3="The project founder is Tetrate's Sheng Wu."/>
-        <Diagram/>
+        <Intro content1="Getting the latest and reliable Envoy build is not a trivial undertaking. Setting up a Bazel build environment is time and resource intensive. Available packages are also limited. Tetrate solves this problem by distributing tested and certified Envoy builds, for CentOS, Ubuntu, and Mac."/>
         <Cards>
           <Card background={require("../images/community/tetrate-tools-features-bg1.png")} 
-              icon={require("../images/community/apache-skywalking/searching-tool.png")} 
-              title="Service Mesh Observability"
-              content="Observe hundreds of microservices all at once by adding distributed tracing to your polyglot system, with service topology mapping, dependency analysis, tracing and context propagation."/>
+              icon={require("../images/community/getEnvoy/reliable.png")} 
+              title="Reliable and Tested Builds"
+              content="Effortlessly build Envoy proxy with tested and certified packages, binaries & images. No complex Bazel tooling, no manual work"/>
           <Card background={require("../images/community/tetrate-tools-features-bg2.png")}
-              icon={require("../images/community/apache-skywalking/metrics.png")} 
-              title="Multi-format Telemetry"
-              content="Get apples-to-apples metrics with Skywalking’s Observability Analysis Platform that works not just for Java, .NET and Node but also for Istio and Zipkin"/>
+              icon={require("../images/community/getEnvoy/multiple-os.png")} 
+              title="Support for Multiple OS"
+              content="Get the right Envoy build for your operating system, including Ubuntu, CentOS, and Mac. Available for Docker and non-Docker environments."/>
           <Card background={require("../images/community/tetrate-tools-features-bg1.png")}
-              icon={require("../images/community/apache-skywalking/analytics.png")} 
-              title="Performance Analysis & Visualization"
-              content="Analyze root causes and optimize performance with metric aggregation and visualization."/>
+              icon={require("../images/community/getEnvoy/easy-to-use.png")} 
+              title="Easy to Use & Always Updated"
+              content="Deploy and update confidently with our easy-to-use install scripts specified to your target environment. Keep up with the latest updates"/>
         </Cards>
         <BtnContainer>
           <StyledLink to='/'>
             <button> READ MORE </button>
           </StyledLink>
           <StyledLink to='/'>
-            <button> GET APACHE SKYWALKING </button>
+            <button> SIGN UP for GETENVOY </button>
           </StyledLink>
         </BtnContainer>
     </Content>
@@ -100,4 +96,4 @@ const ApacheSkyWalking = () => (
   </Layout>
 )
 
-export default ApacheSkyWalking
+export default GetEnvoy

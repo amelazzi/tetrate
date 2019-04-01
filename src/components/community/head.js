@@ -6,10 +6,8 @@ import { green, bleu } from "../../styles/colors"
 
 import NavBar from './navBar'
 
-const background = require("../../images/apache-skywalking/background.jpg")
-
 const StyledHead = styled.div`
-    background-image: url(${background});
+    background-image: url(${props=>props.background});
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0rem;
@@ -52,13 +50,13 @@ const StyledLink = styled(Link)`
 	}
 `;
 
-const Head = ({background}) => (
+const Head = ({background, title, subTitle, about}) => (
   <StyledHead background={background}>
-    <h1> Apache Skywalking </h1>
-    <h2> Get Service Mesh Observability and Performance Management with Skywalking</h2>
-    <StyledLink to='/'>
+    <h1> {title} </h1>
+    <h2> {subTitle} </h2>
+    <StyledLink to='/contact'>
       <button>
-        Contact Us about APACHE SKYWALKING
+        Contact Us about {about}
       </button>
     </StyledLink>
     <NavBar/>

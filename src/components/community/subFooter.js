@@ -74,16 +74,19 @@ const subFooter = () =>{
         <StyledSubFooter>
             <h1> Tetrate’s Commitment to Open Source </h1> 
             <p> Tetrate is committed to supporting the open source community. Our team includes founders and core maintainers of 
-                <StyledLink to='/'> Istio</StyledLink>, <StyledLink to=''>Envoy</StyledLink>, and
-                <StyledLink to='/'> Apache SkyWalking</StyledLink>.
+                <StyledLink to='/'> Istio</StyledLink>, <StyledLink to='/getenvoy'>Envoy</StyledLink>, and
+                <StyledLink to='/apache-skywalking'> Apache SkyWalking</StyledLink>.
                 The open source projects listed here are the result of our continued innovation in the cloud-native space.
             </p> 
             <LinkContainer>
-                <StyledBtn to='/'>
-                    <button> Apache SkyWalking </button>
+                <StyledBtn to='/getenvoy'>
+                    <button> GetEnvoy </button>
                 </StyledBtn>
                 <StyledBtn to='/'>
                     <button> Tetrate Istio Cloud Map Operator </button>
+                </StyledBtn>
+                <StyledBtn to='/'>
+                    <button> Tetrate Q </button>
                 </StyledBtn>
             </LinkContainer>
         </StyledSubFooter>

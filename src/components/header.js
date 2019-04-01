@@ -95,7 +95,7 @@ const StyledLink = styled(Link)`
 /*----------------------------- Variables ---------------------------*/
 const Community = [
     {name: "Apache Skywalking", link:'/apache-skywalking'},
-    {name: "GetEnvoy", link:'/'},
+    {name: "GetEnvoy", link:'/getenvoy'},
     {name: "Tetrate Istio Cloud Map Operator", link:'/'}
 ];
 
