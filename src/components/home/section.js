@@ -27,6 +27,10 @@ const StyledSection = styled.div`
         font-weight: 300;
         margin: 0;
     }
+    @media (max-width: 35em) {
+        border: none;
+        margin: 0rem;
+    }
 
 `;
 
@@ -36,6 +40,9 @@ const ImgContainer = styled.div`
     img{
         width: 100%;
         object-fit: cover;
+    }
+    @media (max-width: 35em) {
+        width: 18rem;
     }
 `;
 

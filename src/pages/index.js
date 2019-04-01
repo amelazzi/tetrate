@@ -18,6 +18,11 @@ import SubFooter from '../components/subFooter'
 const Sections = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    @media (max-width: 35em) {
+		display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 `;
 
 const StyledSlider = styled(Slider)`
