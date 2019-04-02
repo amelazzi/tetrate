@@ -12,6 +12,7 @@ import RightCareer from '../components/careers/rightCareer'
 import Value from '../components/careers/value'
 import Intro from '../components/careers/intro'
 import Article from '../components/careers/article'
+import SubFooter from '../components/subFooter'
 
 const Content = styled.div`
     padding: 0rem 10rem;
@@ -101,6 +102,7 @@ const Careers = () => (
                     resume="Distill and abstract the complexity of raw Cloud infrastructure, network and distributed systems to create a simple, elegant, visually pleasing product experiences for developers, operators, network admins and security professionals."/>
             </ArticlesContainer>
         </Content>
+        <SubFooter title="Interested in a Career with Tetrate?"  content="Submit a Resume" link='/'/>
     </Layout>
 )
 
