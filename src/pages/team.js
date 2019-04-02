@@ -16,14 +16,23 @@ const Content = styled.div`
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding: 0rem 3rem 4rem 3rem;
 
-    padding: 0rem 3rem 8rem 3rem;
+    @media (max-width: 35em) {
+      padding: 1rem;
+    }
 `;
 
 const StyledH1 = styled.h1`
     color: ${bleu};
     font-weight: 400;
     margin: 4rem;
+
+    @media (max-width: 35em) {
+      margin: 2rem;
+      font-size: 2.4rem;
+      font-weight: 200;
+    }
 `;
 
 const CardsContainer = styled.div`
@@ -31,6 +40,9 @@ const CardsContainer = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+    @media (max-width: 35em) {
+        justify-content: center;
+    }
 `;
 
 /*---------------------------- Variables ----------------------------*/

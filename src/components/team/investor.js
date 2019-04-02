@@ -11,6 +11,9 @@ const ImgContainer = styled.div`
 
     margin: 1rem;
     margin-top: -4rem;
+    @media (max-width: 35em) {
+        margin: 0rem;
+    }
 
     img{
         width: 100%;

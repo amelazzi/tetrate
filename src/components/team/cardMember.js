@@ -6,7 +6,7 @@ import { bleu, darkBleu } from "../../styles/colors";
 const StyltedCArd = styled.div`
     position: relative;
     background: white;
-    width: 26rem;
+    width: 26.5rem;
     padding: 1rem;
     box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
     display: flex;
@@ -15,6 +15,11 @@ const StyltedCArd = styled.div`
     text-align: center;
 
     margin: 1rem;
+
+    @media (max-width: 35em) {
+      width: 100%;
+      margin: 2rem 1rem;
+    }
 
     img{
         position: absolute;
