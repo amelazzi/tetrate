@@ -13,8 +13,6 @@ import Value from '../components/careers/value'
 import Intro from '../components/careers/intro'
 import Article from '../components/careers/article'
 
-
-
 const Content = styled.div`
     padding: 0rem 10rem;
     @media (max-width: 35em) {
@@ -33,6 +31,10 @@ const StyledH1 = styled.h1`
     color: ${bleu};
     font-weight: 400;
     margin-bottom: 4rem;
+    @media (max-width: 35em) {
+        font-size: 2.6rem;
+        font-weight: 300;
+    }
 `;
 
 const ValuesContainer = styled.div`
@@ -79,7 +81,7 @@ const Careers = () => (
                     linkedin="https://www.linkedin.com/in/zachary-butcher-339a2180/"/>
             </CareersContainer>
             <StyledH1> Core Values </StyledH1>
-            <ValuesContainer>
+            {/*<ValuesContainer>
                 <Values>
                     <Value title="Open Ethos"
                         content="Apply the open source ethos. Free, open, worldwide collaboration is the font of innovation. Open source is about community, code, and commitment to excellence. We value our people, who join us from many paths and places, whose collaborations dissolve boundaries of role, culture and time zone. We are all continuous learners who solve hard customer problems by combining the best ideas and the best of open source. "/>
@@ -92,7 +94,7 @@ const Careers = () => (
                     <Value title="Empathy"
                         content="We set personal ego aside to be in service of what is best for Tetrate, and act as citizens able to put collective interest above our own. We look out for teammates. Best processes and products follow naturally from addressing the needs of others."/>
                 </Values>
-            </ValuesContainer>
+            </ValuesContainer>*/}
             <ArticlesContainer>
                 <Intro/>
                 <Article title="Product Manager" 

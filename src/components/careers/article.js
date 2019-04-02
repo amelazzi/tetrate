@@ -10,6 +10,10 @@ const StyledArticle = styled.div`
     padding: 4rem 0rem; 
     text-align: left;
     border-top: 2px solid lightgray;
+
+    @media (max-width: 35em) {
+        margin: 0rem;
+    }
     
     h1{
         margin: 0;

@@ -11,6 +11,14 @@ const StyledArticle = styled.div`
     padding: 2rem 0rem; 
     text-align: center;
     border-top: 2px solid lightgray;
+
+    @media (max-width: 35em) {
+        margin: 0rem;
+        h1{
+            margin-top: 4rem;
+            font-size: 2.4rem !important;
+        }
+    }
     
     h1{
         color: ${bleu};
