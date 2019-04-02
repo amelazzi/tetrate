@@ -7,9 +7,8 @@ const StyledSection = styled.div`
     flex-direction: column;
     align-items: center;
 
-    width: 23%;
-
     text-align: center;
+    margin-top: 4rem;
     p{
         color: black !important;
         font-size: 1.8rem;
@@ -17,12 +16,18 @@ const StyledSection = styled.div`
         margin:0;
     }
     small{
-        width: 75%;
+        width: 80%;
         color: white;
         font-size: 1.4rem;
         font-weight: 300;
         margin: 0;
         margin-top: 1rem;
+    }
+    @media (max-width: 35em) {
+        width: 48%;
+        small{
+            width: 100%;
+        }
     }
 
 `;

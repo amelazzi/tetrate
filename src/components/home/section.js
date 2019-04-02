@@ -35,14 +35,11 @@ const StyledSection = styled.div`
 `;
 
 const ImgContainer = styled.div`
-    width: 24rem;
+    width: 18rem;
     margin-top: 3rem;
     img{
         width: 100%;
         object-fit: cover;
-    }
-    @media (max-width: 35em) {
-        width: 18rem;
     }
 `;
 

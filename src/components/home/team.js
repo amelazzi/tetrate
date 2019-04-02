@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { darkBleu } from '../../styles/colors'
 
 import Member from './member'
+import { Link } from "gatsby";
 
 
 const background = require("../../images/home/team/background.jpg")
@@ -12,13 +13,22 @@ const StyledTeam = styled.div`
     background-image: url(${background});
     background-size: cover;
     background-repeat: no-repeat;
-
+    background-position: 0rem;
+    
+    padding-top: 4rem;
     text-align: center;
     h1{
-        padding: 3rem !important;
+        margin: 0;
         color: white;
-        font-size: 3.4rem;
-        font-weight: 400;
+        font-size: 3.3rem;
+        font-weight: 300;
+    }
+    @media (max-width: 35em) {
+        background-position: center;
+        h1{
+            font-size: 2.4rem;
+            padding: 0rem 4rem;
+        }
     }
 `;
 
@@ -27,7 +37,11 @@ const Members = styled.div`
     flex-direction: row;
     justify-content: space-between;
 
-    padding: 0rem 8rem;
+    @media (max-width: 35em) {
+        padding: 0rem 2rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 `;
 
 const ButtonContainer = styled.div`
@@ -49,6 +63,13 @@ const ButtonContainer = styled.div`
     }
 `;
 
+const StyledLink = styled(Link)`
+    text-decoration: none;
+    :hover{
+        text-decoration: none;
+        cursor: pointer;
+    }
+`;
 
 const Team = () => (
     <StyledTeam>
@@ -72,7 +93,9 @@ const Team = () => (
                 detail="Core Maintainer, Envoy; Engineer, Istio, gRPC"/> 
         </Members>
         <ButtonContainer>
-            <button> Meet the Entire team </button>
+            <StyledLink to='/team'>
+                <button> Meet the Entire team </button>
+            </StyledLink>
         </ButtonContainer>
     </StyledTeam>
 )
