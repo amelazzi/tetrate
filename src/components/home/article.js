@@ -19,6 +19,13 @@ const StyledArticle = styled.div`
         object-fit: cover;
     }
 
+    @media (max-width: 35em) {
+        position: static;
+        width: 100%;
+        height: 100%;
+        margin: 2rem;
+    }
+
 `;
 
 const Content = styled.div`
@@ -60,6 +67,11 @@ const ButtonWrap = styled.div`
             background: ${bleu};
             cursor: pointer;
         }
+    }
+
+    @media (max-width: 35em) {
+        position: static;
+        margin-left: 0rem;
     }
 `;
 

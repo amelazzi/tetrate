@@ -25,6 +25,7 @@ const StyledTeam = styled.div`
     }
     @media (max-width: 35em) {
         background-position: center;
+        margin-top: 4rem;
         h1{
             font-size: 2.4rem;
             padding: 0rem 4rem;

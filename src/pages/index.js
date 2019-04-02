@@ -41,8 +41,14 @@ const Articles = styled.div`
 
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 35em) {
+        padding: 2rem 0rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 `;
 
 const IndexPage = () => (
