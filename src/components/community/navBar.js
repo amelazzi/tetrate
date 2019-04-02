@@ -38,6 +38,9 @@ const StyledNavBar = styled.nav`
             text-decoration: none;
         }
     }
+    @media (max-width: 35em) {
+      display: none;
+    }
 `;
 
 

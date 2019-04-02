@@ -12,6 +12,9 @@ const StyledDiagram = styled.div`
         width: 100%;
         object-fit: cover;
     }
+    @media (max-width: 35em) {
+      padding: 0rem 2rem;
+    }
 `;
 
 
