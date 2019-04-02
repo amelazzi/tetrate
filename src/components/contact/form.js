@@ -9,6 +9,11 @@ import { bleu, darkBleu } from "../../styles/colors"
 
 const StyledForm = styled.div`
     width: 45%;
+    @media (max-width: 35em) {
+        width: 91%;
+        margin-top: 4rem;
+        padding: 2rem;
+    }
     padding: 4rem 3rem;
     background: #ebebeb;
 
@@ -36,6 +41,11 @@ const StyledForm = styled.div`
             color: white;
             background: ${darkBleu};
             cursor: pointer;
+        }
+        @media (max-width: 35em) {
+            width: 100%;
+            padding: 2rem 4rem;
+            margin-left: 0rem;
         }
     }
 `;
