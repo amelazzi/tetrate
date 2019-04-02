@@ -45,8 +45,13 @@ const TabsContent = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-
+    flex-wrap: wrap;
     padding: 3rem;
+
+    @media (max-width: 35em) {
+      padding: 2rem 1rem;
+      padding-top: 1rem;
+    }
 `;
 
 class Tabs extends Component {

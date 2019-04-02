@@ -6,9 +6,14 @@ const StyledHead = styled.div`
     background-image: url(${props=>props.background});
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0rem -12rem;
+    background-position: 0rem;
 
-    padding: 7rem 4rem;
+    @media (max-width: 35em) {
+      background-position: -4rem 0rem;
+      padding: 8rem 2rem;
+    }
+
+    padding: 8.5rem 4rem;
 
     h1{
         color: white;
@@ -18,8 +23,8 @@ const StyledHead = styled.div`
     }
     h2{
         color: white;
-        font-size: 3rem;
-        font-weight: 300;
+        font-size: 2.6rem;
+        font-weight: 200;
         margin: 0;
         margin-top: 2rem;
     }

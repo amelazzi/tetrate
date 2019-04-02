@@ -11,6 +11,9 @@ const StyledArticle = styled.div`
     height: 42rem;
     padding: 1rem;
     box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
+    @media (max-width: 35em) {
+      width: 100%;
+    }
     display: flex;
     flex-direction: column;
 
