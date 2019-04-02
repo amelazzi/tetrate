@@ -1,8 +1,8 @@
 import React from 'react'
 
 import styled from 'styled-components'
-import { bleu, darkBleu } from '../../styles/colors';
-import { Link } from 'gatsby';
+import { bleu, darkBleu } from '../../styles/colors'
+import { Link } from 'gatsby'
 
 const backgroundImg = require("../../images/home/head-background.png")
 
@@ -156,6 +156,7 @@ const Head = () => {
             <p>
                 <small> Powered by </small> Envoy and Istio
             </p>
+
             <SectionContainer>
                 <StyledSection to='/tetrateq'>
                     <small> Better security </small>

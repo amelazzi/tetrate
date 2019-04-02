@@ -2,12 +2,17 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 import { DropdownItem } from 'styled-dropdown-component'
-
 import { darkBleu, bleu, blue } from '../styles/colors'
 
 import SimpleDropDown from './dorpDown'
 
-var showMenu = 'none'
+import { ModalProvider, BaseModalBackground } from "styled-react-modal"
+import FancyModalButton from '../components/modal'
+
+const FadingBackground = styled(BaseModalBackground)`
+  opacity: ${props => props.opacity};
+  transition: opacity ease 200ms;
+`;
 
 const StyledHeader = styled.div`
     font-size: 1.5rem;
@@ -19,24 +24,14 @@ const StyledHeader = styled.div`
     * {
         margin: 0;
     }
-    @media (max-width: 35em) {
-        flex-direction: column;
-        justify-content: center;
-        padding: 0.2rem 2rem;
-    }
-
     nav {
         display: flex;
         align-items: center;
         text-transform: uppercase;
         @media (max-width: 35em) {
-            background: ${bleu};
-            flex-direction: column;
-            padding-bottom: 1.5rem;
-            color: white;
+            display: none;
         }
     }
-
     a {
         padding: 0.8rem 1.6rem;
         :last-child{
@@ -46,18 +41,13 @@ const StyledHeader = styled.div`
         text-decoration: none;
         color: ${darkBleu};
         font-weight: 600;
-
         &:hover{
             color: ${bleu};
             cursor: pointer;
         }
-        @media (max-width: 35em) {
-            color: white;
-            :hover{
-                text-decoration: none;
-                cursor: pointer;
-            }
-        }
+    }
+    @media (max-width: 35em) {
+        padding: 0.2rem 2rem;
     }
 `;
 
@@ -79,23 +69,8 @@ const LogoContainer = styled.div`
 
 const StyledMenu = styled.div`
     display: flex;
-    @media (max-width: 35em) {
-        flex-direction: column;
-        display: ${showMenu};
-    }
 `;
 
-const MenuIcon = styled.img`
-    display: block;
-    width: 4rem;
-    height: 2.5rem;
-    :hover{
-        cursor: pointer;
-    }
-    @media (max-width: 35em) {
-		display: block;
-    }
-`;
 
 const StyledDropdownItem = styled(DropdownItem)`
     padding: 1.5rem;
@@ -105,7 +80,6 @@ const StyledDropdownItem = styled(DropdownItem)`
     text-transform: none;
     white-space: nowrap;
     transition: .3s ease-in-out;
-
     :hover{
         background: ${blue};
         cursor: pointer;
@@ -158,7 +132,9 @@ const Header = () => {
                 <LogoContainer>
                     <img src={require("../images/logo/logo-text-right.png")} alt='logo'/>
                 </LogoContainer>
-                <MenuIcon src={require("../images/menu-icon.png")} onClick={menuToggle}/>
+                <ModalProvider backgroundComponent={FadingBackground}>
+                    <FancyModalButton />
+                </ModalProvider>
             </StyledLogo>
             <StyledMenu>
                 <nav>
@@ -172,19 +148,6 @@ const Header = () => {
             </StyledMenu>
         </StyledHeader>
     );
-}
-
-
-/*---------------------------- Function --------------------------*/
-var isShow = false
-function menuToggle(){
-	if(!isShow) {
-        showMenu = 'block'
-        isShow = true
-	}else{
-        showMenu = 'none'
-		isShow = false
-	}
 }
 
 export default Header
