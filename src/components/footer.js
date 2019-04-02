@@ -10,6 +10,7 @@ const StylesFooter = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     p{
         color: white;
         font-size: 1.8rem;
@@ -21,26 +22,47 @@ const StylesFooter = styled.div`
         font-size: 1.4rem;
         font-weight: 200;
     }
+
+    @media (max-width: 35em) {
+		padding: 3rem 2rem;
+        p{
+            margin: 0;
+            margin-bottom: 1.6rem;
+        }
+    }
 `;
 
 const MenuContent = styled.div`
-    display: grid;
-    grid-template-columns: 2fr 1.8fr 1.8fr 1.8fr 1.8fr 2fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 60%;
+    @media (max-width: 35em) {
+        width: 100%;
+        flex-wrap: wrap;
+    }
 `;
 
 const Content = styled.div`
     display: flex;
     flex-direction: column;
-    text-align: left;  
+    width: 30%;
+    text-align: left; 
     h1{
         color: white;
         display: block;
         font-size: 1.6rem;
-        padding-bottom: 1rem;
-        font-weight: 700;
+        font-weight: 600;
     }
     ul{
         list-style: none;
+    }
+    @media (max-width: 35em) {
+        width: 50%;
+        margin-top: 3rem !important;
+        :first-child, :nth-child(2){
+            margin-top: 0 !important;
+        }
     }
 `;
 
@@ -50,6 +72,9 @@ const StyledLink = styled(Link)`
     font-weight: 300;
     margin: 0.6rem 0rem;
     text-decoration: none;
+    :first-child{
+        margin-top: 0rem;
+    }
     :hover{
         color: white;
     }
@@ -65,8 +90,8 @@ const SocialMedia = styled.div`
 `;
 
 const IconContainer = styled.div`
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.2rem;
+    height: 2.2rem;
     background: ${bleu};
     margin: 1rem;
     padding: 0.6rem;
@@ -87,12 +112,12 @@ const Footer = () => {
     return(
         <StylesFooter>
             <MenuContent>
-                <Content></Content>
                 <Content>
                     <h1> Community </h1>
-                        <StyledLink to='/'> Apache Skywalking  </StyledLink> 
-                        <StyledLink to='/'> Tetrate Istio Cloud Map Operator </StyledLink>
-                        <StyledLink to='/'> GetEnvoy </StyledLink> 
+                        <StyledLink to='/apache-skywalking'> Apache Skywalking  </StyledLink> 
+                        <StyledLink to='/tetrate-cloud-map'> Tetrate Istio Cloud Map Operator </StyledLink>
+                        <StyledLink to='/getenvoy'> GetEnvoy </StyledLink> 
+                        <StyledLink to='/tetrateq'> Tetrate Q </StyledLink> 
                 </Content>
                 <Content>
                     <h1> Resources </h1>
@@ -103,13 +128,13 @@ const Footer = () => {
                 </Content>
                 <Content>
                     <h1> About Us </h1>
-                        <StyledLink to='/'> Team </StyledLink> 
-                        <StyledLink to='/'> News</StyledLink>
-                        <StyledLink to='/'> Careers </StyledLink> 
+                        <StyledLink to='/team'> Team </StyledLink> 
+                        <StyledLink to='/news'> News</StyledLink>
+                        <StyledLink to='/careers'> Careers </StyledLink> 
                 </Content>
                 <Content>
                     <h1> Connect </h1>
-                        <StyledLink to='/'> Contact </StyledLink> 
+                        <StyledLink to='/contact'> Contact </StyledLink> 
                         <StyledLink to='/'> Terms of Use </StyledLink>
                         <StyledLink to='/'> privacy </StyledLink> 
                 </Content>

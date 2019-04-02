@@ -13,12 +13,13 @@ const StyledFooter = styled.div`
     background-position: 0rem;
 
     text-align: center;
-    padding: 3rem;
+    padding: 4rem;
 
     h1{
         color: white;
         font-size: 3.2rem;
         font-weight: 400;
+        margin-top: 0rem;
     }
 
     button{
@@ -26,7 +27,8 @@ const StyledFooter = styled.div`
         border: none;
         background: ${bleu} ;
         font-size: 1.6rem;
-        padding: 1rem 5rem;
+        letter-spacing: 0.1rem;
+        padding: 1rem 4rem;
         color: white;
 
         :hover{
