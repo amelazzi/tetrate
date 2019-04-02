@@ -26,13 +26,23 @@ const StyledFooter = styled.div`
         border: none;
         background: ${bleu} ;
         font-size: 1.6rem;
-        padding: 1rem 4rem;
+        padding: 1rem 5rem;
         color: white;
 
         :hover{
             background: white;
             color: ${darkBleu};
             cursor: pointer;
+        }
+    }
+
+    @media (max-width: 35em) {
+		padding: 4rem 2rem;
+        h1{
+            margin: 0;
+            padding: 0;
+            font-size: 2.4rem;
+            font-weight: 300;
         }
     }
 `;

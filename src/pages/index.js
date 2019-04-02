@@ -116,7 +116,7 @@ const IndexPage = () => (
             content="Join the first ever industry conference on Service Mesh Technology"/>
     </Articles>
     <SubFooter title="Join the Movement. Adopt Service Mesh. "
-        content="Request Preview" link='/'/>
+        content="Request a Preview" link='/'/>
   </Layout>
 )
 
