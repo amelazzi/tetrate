@@ -13,6 +13,9 @@ const StyledHead = styled.div`
     background-position: 0rem;
 
     padding: 8rem 4rem;
+    @media (max-width: 35em) {
+      padding: 8rem 2rem;
+    }
 
     h1{
         color: white;

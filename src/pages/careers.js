@@ -16,13 +16,16 @@ import Article from '../components/careers/article'
 
 
 const Content = styled.div`
-  padding: 0rem 10rem;
+    padding: 0rem 10rem;
+    @media (max-width: 35em) {
+        padding: 0rem 2rem;
+    }
 `;
 
 const CareersContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 `;
 
 const StyledH1 = styled.h1`

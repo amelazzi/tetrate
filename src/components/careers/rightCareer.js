@@ -12,6 +12,16 @@ const StyledCareer = styled.div`
     align-items: center;
     padding: 0rem 8rem;
 
+    @media (max-width: 35em) {
+      flex-direction: column-reverse;
+      border-bottom: 2px solid lightgray;
+      :last-child{
+          border: none;
+      }
+      text-align: center;
+      padding: 4rem 0rem;
+    }
+
     p{
         color: black;
         font-size: 1.6rem;
@@ -53,6 +63,12 @@ const Content = styled.div`
 
     margin-left: 6rem;
     padding-right: 6rem;
+
+    @media (max-width: 35em) {
+        margin-left: 0rem;
+        padding-right: 0rem;
+        margin-top: 4rem;
+    }
 `;
 
 const SocialMedia = styled.div`
@@ -60,6 +76,7 @@ const SocialMedia = styled.div`
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    margin: auto;
 `;
 
 const IconContainer = styled.div`
