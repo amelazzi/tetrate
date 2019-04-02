@@ -13,8 +13,11 @@ import Card from '../components/community/card'
 import SubFooter from "../components/community/subFooter"
 
 const Content = styled.div`
-    padding: 0rem 14rem;
+   padding: 0rem 14rem;
     padding-bottom: 4rem;
+    @media (max-width: 35em) {
+      padding: 0rem;
+    }
 `;
 
 const Cards = styled.div`
@@ -23,6 +26,11 @@ const Cards = styled.div`
   justify-content: space-around;
   padding: 1rem;
   margin-top: 2rem;
+  @media (max-width: 35em) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 `;
 
 const BtnContainer = styled.div`
@@ -30,6 +38,12 @@ const BtnContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   text-align: center;
+  @media (max-width: 35em) {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0rem;
+    padding-top: 0rem;
+  }
 `;
 
 const StyledLink = styled(Link)`
@@ -57,6 +71,11 @@ const StyledLink = styled(Link)`
             background: ${darkBleu};
             cursor: pointer;
         }
+    }
+    @media (max-width: 35em) {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem;
     }
 `;
 
