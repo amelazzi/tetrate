@@ -50,6 +50,18 @@ const Content = styled.div`
     }
 `;
 
+const Sponsored = styled.div`
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+
+    img{
+        width: 16rem;
+        margin-left: 1rem;
+    }
+`;
+
 const ButtonWrap = styled.div`
     position: absolute;
     bottom: 2rem;
@@ -81,17 +93,22 @@ const StyledLink = styled(Link)`
     color: white;
 `;
 
-const Article = ({picture, type, title, content}) => {
+
+const Events = () => {
     return(
         <StyledArticle>
-            <img src={picture} alt='icon'/>
+            <img src={require("../../images/home/graphic-resources-events-servicemeshday.jpg")} alt='icon'/>
             <Content>
-                <h2> {type} </h2>
-                <h1> {title} </h1>
-                <p> {content} </p>
+                <h2> EVENTS </h2>
+                <h1> Service Mesh Day Conference </h1>
+                <p> Join the first ever industry conference on Service Mesh Technology </p>
+                <Sponsored>
+                    <p> Sponsored by </p>
+                    <img src={require("../../images/logo/logo-text-right.png")} alt='logo' />
+                </Sponsored>
                 <ButtonWrap>
                     <button>
-                        <StyledLink to='/'> Read </StyledLink>
+                        <StyledLink to='https://servicemeshday.com'> Register </StyledLink>
                     </button>
                 </ButtonWrap>
             </Content>
@@ -99,4 +116,4 @@ const Article = ({picture, type, title, content}) => {
     );
 }
 
-export default Article;
+export default Events;

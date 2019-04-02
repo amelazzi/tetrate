@@ -12,6 +12,7 @@ import Section from '../components/home/section'
 import Team from '../components/home/team'
 import Testimony from '../components/home/testimony'
 import Article from '../components/home/article'
+import Events from '../components/home/events'
 import SubFooter from '../components/subFooter'
 
 
@@ -110,10 +111,7 @@ const IndexPage = () => (
             type="PAPERS & GUIDES"
             title="Case Study: NAV’s Istio Deployment with Tetrate"
             content="See how Tetrate helps the Norwegian Labour and Welfare Administration (NAV) operationalize Istio."/>
-        <Article picture={require("../images/home/graphic-resources-events-servicemeshday.jpg")}
-            type="EVENTS"
-            title="Service Mesh Day Conference"
-            content="Join the first ever industry conference on Service Mesh Technology"/>
+        <Events/>
     </Articles>
     <SubFooter title="Join the Movement. Adopt Service Mesh. "
         content="Request a Preview" link='/'/>
