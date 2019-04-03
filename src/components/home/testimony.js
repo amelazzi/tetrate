@@ -15,6 +15,10 @@ const StyledSection = styled.div`
     }
     padding: 0rem 4rem;
     margin: 3rem 0rem;
+    @media (max-width: 35em) {
+        margin: 0rem;
+        margin-top: 4rem;
+    }
 
     color: black;
     line-height: 1.6;
