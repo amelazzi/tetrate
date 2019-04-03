@@ -3,11 +3,26 @@ import styled from 'styled-components'
 import { bleu, gray, darkBleu } from '../../styles/colors'
 
 import Card from './card'
+import SelectBox from '../../components/contact/selectOption'
+
+const StyledSelectBox = styled.div`
+    display: none;
+    @media (max-width: 35em) {
+      display: block;
+      margin: 2rem;
+      margin-top: 4rem;
+    }
+`;
+
 
 const TabsBtn = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
+
+    @media (max-width: 35em) {
+      display: none;
+    }
 
     margin: 4rem 0rem;
 
@@ -51,6 +66,7 @@ const TabsContent = styled.div`
     @media (max-width: 35em) {
       padding: 2rem 1rem;
       padding-top: 1rem;
+      margin-top: -23rem;
     }
 `;
 
@@ -78,6 +94,17 @@ class Tabs extends Component {
                         <IconContainer></IconContainer>
                         Events </button>
                 </TabsBtn>
+                <StyledSelectBox>
+                    <SelectBox
+                        items={[
+                            { value: 'See All', id: 1 },
+                            { value: 'Papers & Guides', id: 2 },
+                            { value: 'Talks & Videos', id: 3 },
+                            { value: 'Events', id: 4 }
+                        ]}
+                    />
+                </StyledSelectBox>
+                
                 <div>
                     {this.state.activeTab === 1 ? (
                         <TabsContent>
