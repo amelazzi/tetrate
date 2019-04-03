@@ -141,7 +141,7 @@ const Header = () => {
                     <Link to="/"> Home </Link>
                     <SimpleDropDown text='Community' args={Com} />
                     <Link to="/resources"> Resources </Link>
-                    <Link to="/"> Blog </Link>
+                    <Link to="/blog"> Blog </Link>
                     <SimpleDropDown text='About Us' args={AbtUs} />
                     <Link to="/contact"> Contact </Link>
                 </nav>
