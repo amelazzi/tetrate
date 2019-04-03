@@ -35,13 +35,15 @@ const StyledH1 = styled.h1`
     @media (max-width: 35em) {
         font-size: 2.6rem;
         font-weight: 300;
+        margin: 0;
     }
 `;
 
 const ValuesContainer = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content:space-between;
+    flex-wrap: wrap;
 `;
 
 const Values = styled.div`
@@ -82,20 +84,17 @@ const Careers = () => (
                     linkedin="https://www.linkedin.com/in/zachary-butcher-339a2180/"/>
             </CareersContainer>
             <StyledH1> Core Values </StyledH1>
-            {/*<ValuesContainer>
-                <Values>
+            <ValuesContainer>
                     <Value title="Open Ethos"
                         content="Apply the open source ethos. Free, open, worldwide collaboration is the font of innovation. Open source is about community, code, and commitment to excellence. We value our people, who join us from many paths and places, whose collaborations dissolve boundaries of role, culture and time zone. We are all continuous learners who solve hard customer problems by combining the best ideas and the best of open source. "/>
                     <Value title="Efficiency"
                         content="Keep it simple. We focus on fundamentals. We favor efficient processes, elegant solutions, and necessity-based execution. We recognize and maximize the resources we have. We act and iterate quickly, supporting a culture of prompt action."/>
-                </Values>
-                <Values>
+                
                     <Value title="Expressiveness"
                         content="Be friendly. Be real. We bring life and spirit to our work and share the awesome things we encounter in our field. We foster an environment of debate and discourse where no one is afraid to contribute. We speak candidly about mistakes; we expect them to happen and see them as opportunities to learn."/>
                     <Value title="Empathy"
                         content="We set personal ego aside to be in service of what is best for Tetrate, and act as citizens able to put collective interest above our own. We look out for teammates. Best processes and products follow naturally from addressing the needs of others."/>
-                </Values>
-            </ValuesContainer>*/}
+            </ValuesContainer>
             <ArticlesContainer>
                 <Intro/>
                 <Article title="Product Manager" 

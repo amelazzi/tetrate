@@ -8,9 +8,17 @@ const StyledValue = styled.div`
     padding: 2rem;
     padding-top: 0rem;
     text-align: center;
-    height: 30rem;
+    width: 38%;
+    @media (max-width: 35em) {
+        width: 100%;
+        margin: 0;
+        padding: 2rem 0rem;
+        :nth-child(3){
+            border-bottom: 2px solid ${bleu} !important;
+        }
+    }
     border-bottom: 2px solid ${bleu};
-    :last-child{
+    :last-child, :nth-child(3){
         border: none;
     }
     h1{
@@ -21,6 +29,7 @@ const StyledValue = styled.div`
         color: black;
         font-weight: 300;
         line-height: 1.8;
+        margin-top: -1.5rem;
     }
 `;
 
