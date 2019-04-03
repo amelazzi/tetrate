@@ -1,23 +1,35 @@
 import React from "react"
+import { Link } from 'gatsby'
 
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
 import styled from 'styled-components'
+import { darkBleu, bleu } from "../styles/colors"
 
 import Head from '../components/head'
 import Article from '../components/blog/article'
 import SelectBox from '../components/blog/selectBox'
 import SearchInput from "../components/blog/searchInput"
 
+
 const Content = styled.div`
     display: grid;
     grid-template-columns: 2.8fr 1fr;
 
     padding: 4rem;
+
+    @media (max-width: 35em) {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 4rem 2rem;
+    }
 `;
 
 const FilterSearch = styled.div`
     margin-left: 6rem;
+    @media (max-width: 35em) {
+        margin-left: 0;
+    }
     h3{
         font-size: 1.6rem;
         font-weight: 200;
@@ -29,8 +41,66 @@ const FilterSearch = styled.div`
 
 const Articles = styled.div`
     @media (max-width: 35em) {
-        padding: 4rem 2rem;
+        padding: 4rem 0rem;
     }
+`;
+
+const PreviousBtn = styled(Link)`
+    text-decoration: none;
+    :hover{
+        text-decoration: none;
+    }
+    button{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      border: none;
+      background: ${darkBleu};
+      color: white;
+      font-size: 1.6rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+      
+      margin: 4rem;
+      margin-top: 0;
+      padding: 0.8rem 3.5rem;
+      padding-left: 1.5rem;
+      :hover{
+          color: white;
+          background: ${bleu};
+          cursor: pointer;
+      }
+      @media (max-width: 35em) {
+          margin-top: -4rem;
+          margin-left: 2rem;
+          width: 92%;
+      }
+    }
+`;
+
+const NextBtn = styled(PreviousBtn)`
+  button{
+    padding: 0.8rem;
+    padding-left: 3.5rem !important;
+  }
+`;
+
+const PrevIcon = styled.div`
+  max-width: 0.8rem;
+  min-width: 0.8rem;
+  
+  margin-right: 1.6rem;
+  margin-top: 0.3rem;
+
+  img{
+    width: 100%;
+    object-fit: cover;
+  }
+`;
+
+const NextIcon = styled(PrevIcon)`
+  margin-left: 1.6rem;
 `;
 
 const Blog = () => (
@@ -72,6 +142,22 @@ const Blog = () => (
                 <SearchInput></SearchInput>
             </FilterSearch>
         </Content>
+        <PreviousBtn>
+          <button>
+            <PrevIcon>
+              <img src={require("../images/back-arrow.png")} alt="back" />
+            </PrevIcon>
+            Previous Posts
+          </button>
+        </PreviousBtn>
+        {/*<NextBtn>
+          <button>
+            Newer Posts
+            <NextIcon>
+              <img src={require("../images/next-arrow.png")} alt="back" />
+            </NextIcon>
+          </button>
+        </NextBtn>*/}
     </Layout>
 )
 
