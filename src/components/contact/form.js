@@ -2,15 +2,18 @@ import React from "react"
 import styled from 'styled-components'
 
 import Input from './input'
+import SelectBox from './selectOption'
 import SimpleCheckBox from './checkBox'
 import TextArea from './textArea'
 
 import { bleu, darkBleu } from "../../styles/colors"
 
 const StyledForm = styled.div`
-    width: 45%;
+position: relative;
+    width: 50%;
+    box-sizing: border-box;
     @media (max-width: 35em) {
-        width: 91%;
+        width: 100%;
         margin-top: 4rem;
         padding: 2rem;
     }
@@ -23,6 +26,7 @@ const StyledForm = styled.div`
         font-weight: bold;
         margin: 0;
         margin-bottom: 2.5rem;
+        margin-top: -19rem;
     }
 
     input[type="submit"]{
@@ -31,7 +35,7 @@ const StyledForm = styled.div`
         padding: 1rem 4rem;
         margin: 0;
         margin-top: 1rem;
-        margin-left: 15.5rem;
+        margin-left: 12rem;
         color: white;
         font-size: 1.6rem;
         font-weight: 600;
@@ -58,10 +62,22 @@ const Form = () => (
         <Input type="text" placeholder='Company Name'/>
         <Input type="email" placeholder='Business Email*'/>
         <Input type="email" placeholder='Business Email*'/>
+        <SelectBox
+          items={[
+            { value: 'Roles', id: 1 },
+            { value: 'Dev', id: 2 },
+            { value: 'Cloud Platform', id: 3 },
+            { value: 'Network Ops', id: 4 },
+            { value: 'Security', id: 5 },
+            { value: 'Media', id: 6 },
+            { value: 'Other', id: 7 }
+          ]}
+        />
       <h4> Products and Tools </h4>
         <SimpleCheckBox val="Cloud Map"/>
         <SimpleCheckBox val="Apache Skywalking"/>
         <SimpleCheckBox val="getEnvoy"/>
+        <SimpleCheckBox val="Tetrate Q"/>
         <TextArea placeholder="Message" />
       <input type="submit" value="Send" />
     </form>
