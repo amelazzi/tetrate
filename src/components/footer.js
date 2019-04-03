@@ -135,7 +135,7 @@ const Footer = () => {
                 <Content>
                     <h1> Connect </h1>
                         <StyledLink to='/contact'> Contact </StyledLink> 
-                        <StyledLink to='/'> Terms of Use </StyledLink>
+                        <StyledLink to='/terms-of-use'> Terms of Use </StyledLink>
                         <StyledLink to='/'> privacy </StyledLink> 
                 </Content>
             </MenuContent>
