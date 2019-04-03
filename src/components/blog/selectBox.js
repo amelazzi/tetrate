@@ -55,7 +55,7 @@ const StyledArrow = styled.div`
         height: 0; 
         border-left: 0.8rem solid transparent;
         border-right: 0.8rem  solid transparent;
-        border-top: 1rem solid #46abd7;
+        border-top: 1rem solid ${bleu};
 
     }
     
@@ -67,7 +67,7 @@ const StyledArrow = styled.div`
         height: 0; 
         border-left: 0.8rem solid transparent;
         border-right: 0.8rem solid transparent;
-        border-bottom: 1rem solid #46abd7;
+        border-bottom: 1rem solid ${bleu};
     }
 `;
 
