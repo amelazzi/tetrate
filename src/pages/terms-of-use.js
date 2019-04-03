@@ -16,6 +16,9 @@ const Content = styled.div`
         font-weight: 200;
         line-height: 2.8rem;
     }
+    @media (max-width: 35em) {
+		padding: 4rem 2rem;
+    }
 `;
 
 const StyledH1 = styled.h1`
