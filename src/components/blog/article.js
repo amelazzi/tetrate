@@ -8,6 +8,7 @@ const StyledArticle = styled(Link)`
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
 
     @media (max-width: 35em) {
         flex-direction: column;
