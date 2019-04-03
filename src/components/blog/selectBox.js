@@ -4,6 +4,7 @@ import { bleu, darkBleu } from '../../styles/colors';
 
 const StyledSelectBox = styled.div`
     position: relative;
+    margin-top: 2rem;
 `;
 
 const BoxContainer = styled.div`
@@ -14,7 +15,7 @@ const BoxContainer = styled.div`
     text-align: center;
 
     width: 100%;
-    padding: 1.6rem;
+    padding-bottom: 0.8rem;
 
     box-sizing: border-box;
     border-bottom: 1px solid #c8c8c8;
@@ -49,7 +50,7 @@ const StyledArrow = styled.div`
     .select-box--arrow-down {
         position: absolute;
         top: 1.2rem;
-        left: 0.8rem;
+        left: 1.5rem;
         width: 0; 
         height: 0; 
         border-left: 0.8rem solid transparent;
@@ -61,7 +62,7 @@ const StyledArrow = styled.div`
     .select-box--arrow-up {
         position: absolute;
         top: 1rem;
-        left: 0.8rem;
+        left: 1.5rem;
         width: 0; 
         height: 0; 
         border-left: 0.8rem solid transparent;

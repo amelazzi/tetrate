@@ -61,7 +61,7 @@ const Content = styled.div`
     p{
         color: black;
         font-weight: 200;
-        line-height: 1.6;
+        line-height: 1.8;
     }
 
     @media (max-width: 35em) {

@@ -7,6 +7,7 @@ import styled from 'styled-components'
 import Head from '../components/head'
 import Article from '../components/blog/article'
 import SelectBox from '../components/blog/selectBox'
+import SearchInput from "../components/blog/searchInput"
 
 const Content = styled.div`
     display: grid;
@@ -68,6 +69,7 @@ const Blog = () => (
                         { value: 'Service Mesh', id: 10 },
                     ]}
                 />
+                <SearchInput></SearchInput>
             </FilterSearch>
         </Content>
     </Layout>

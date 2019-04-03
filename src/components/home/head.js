@@ -88,7 +88,7 @@ const SectionContainer = styled.div`
     flex-direction: row;
     justify-content: center;
 
-    margin-top: 15rem;
+    margin-top: 10rem;
     padding: 0rem;
 
     @media (max-width: 35em) {
