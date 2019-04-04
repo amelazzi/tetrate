@@ -23,7 +23,7 @@ const StylesFooter = styled.div`
         font-weight: 200;
     }
 
-    @media (max-width: 35em) {
+    @media (max-width: 48em) {
 		padding: 3rem 2rem;
         p{
             margin: 0;
@@ -37,7 +37,7 @@ const MenuContent = styled.div`
     flex-direction: row;
     justify-content: center;
     width: 60%;
-    @media (max-width: 35em) {
+    @media (max-width: 48em) {
         width: 100%;
         flex-wrap: wrap;
     }
@@ -57,7 +57,7 @@ const Content = styled.div`
     ul{
         list-style: none;
     }
-    @media (max-width: 35em) {
+    @media (max-width: 48em) {
         width: 50%;
         margin-top: 3rem !important;
         :first-child, :nth-child(2){
@@ -85,7 +85,7 @@ const SocialMedia = styled.div`
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 6rem;
+    margin-top: 4rem;
     margin-bottom: 2rem;
 `;
 

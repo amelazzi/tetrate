@@ -12,7 +12,7 @@ const StyledArticle = styled.div`
     text-align: center;
     border-top: 2px solid lightgray;
 
-    @media (max-width: 35em) {
+    @media (max-width: 48em) {
         margin: 0rem;
         h1{
             margin-top: 4rem;

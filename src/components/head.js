@@ -8,7 +8,7 @@ const StyledHead = styled.div`
     background-repeat: no-repeat;
     background-position: 0rem;
 
-    @media (max-width: 35em) {
+    @media (max-width: 48em) {
       background-position: -4rem 0rem;
       padding: 8rem 2rem;
     }

@@ -23,7 +23,7 @@ const StyledTeam = styled.div`
         font-size: 3.3rem;
         font-weight: 300;
     }
-    @media (max-width: 35em) {
+    @media (max-width: 48em) {
         background-position: center;
         margin-top: 4rem;
         h1{
@@ -38,7 +38,7 @@ const Members = styled.div`
     flex-direction: row;
     justify-content: space-between;
 
-    @media (max-width: 35em) {
+    @media (max-width: 48em) {
         padding: 0rem 2rem;
         flex-wrap: wrap;
         justify-content: space-between;

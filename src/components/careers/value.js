@@ -9,7 +9,7 @@ const StyledValue = styled.div`
     padding-top: 0rem;
     text-align: center;
     width: 38%;
-    @media (max-width: 35em) {
+    @media (max-width: 48em) {
         width: 100%;
         margin: 0;
         padding: 2rem 0rem;

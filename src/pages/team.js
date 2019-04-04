@@ -18,7 +18,7 @@ const Content = styled.div`
     text-align: center;
     padding: 0rem 3rem 4rem 3rem;
 
-    @media (max-width: 35em) {
+    @media (max-width: 48em) {
       padding: 1rem;
     }
 `;
@@ -28,7 +28,7 @@ const StyledH1 = styled.h1`
     font-weight: 400;
     margin: 4rem;
 
-    @media (max-width: 35em) {
+    @media (max-width: 48em) {
       margin: 2rem;
       font-size: 2.4rem;
       font-weight: 200;
@@ -40,7 +40,7 @@ const CardsContainer = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    @media (max-width: 35em) {
+    @media (max-width: 48em) {
         justify-content: center;
     }
 `;

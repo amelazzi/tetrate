@@ -28,7 +28,7 @@ const StyledHeader = styled.div`
         display: flex;
         align-items: center;
         text-transform: uppercase;
-        @media (max-width: 35em) {
+        @media (max-width: 48em) {
             display: none;
         }
     }
@@ -46,7 +46,7 @@ const StyledHeader = styled.div`
             cursor: pointer;
         }
     }
-    @media (max-width: 35em) {
+    @media (max-width: 48em) {
         padding: 0.2rem 2rem;
     }
 `;

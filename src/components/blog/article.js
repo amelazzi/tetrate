@@ -10,7 +10,7 @@ const StyledArticle = styled(Link)`
     justify-content: flex-start;
     align-items: center;
 
-    @media (max-width: 35em) {
+    @media (max-width: 48em) {
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -64,7 +64,7 @@ const Content = styled.div`
         line-height: 1.8;
     }
 
-    @media (max-width: 35em) {
+    @media (max-width: 48em) {
         margin-left: 0rem;
         h1{
             font-size: 2.4rem;

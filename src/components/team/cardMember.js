@@ -16,7 +16,7 @@ const StyltedCArd = styled.div`
 
     margin: 1rem;
 
-    @media (max-width: 35em) {
+    @media (max-width: 48em) {
       width: 100%;
       margin: 2rem 1rem;
     }

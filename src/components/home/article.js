@@ -19,7 +19,7 @@ const StyledArticle = styled.div`
         object-fit: cover;
     }
 
-    @media (max-width: 35em) {
+    @media (max-width: 48em) {
         position: static;
         width: 100%;
         height: 100%;
@@ -70,7 +70,7 @@ const ButtonWrap = styled.div`
         }
     }
 
-    @media (max-width: 35em) {
+    @media (max-width: 48em) {
         position: static;
         margin-left: 0rem;
     }

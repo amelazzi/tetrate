@@ -12,7 +12,7 @@ const StyledCareer = styled.div`
     align-items: center;
     padding: 0rem 8rem;
 
-    @media (max-width: 35em) {
+    @media (max-width: 48em) {
       flex-direction: column-reverse;
       border-bottom: 2px solid lightgray;
       :last-child{
@@ -64,7 +64,7 @@ const Content = styled.div`
     margin-left: 6rem;
     padding-right: 6rem;
 
-    @media (max-width: 35em) {
+    @media (max-width: 48em) {
         margin-left: 0rem;
         padding-right: 0rem;
         margin-top: 4rem;

@@ -4,6 +4,8 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 import { darkBleu, bleu } from '../../styles/colors'
 
+import SelectBox from './selectBox'
+
 
 
 const background = require("../../images/home/footer-background.jpg")
@@ -30,6 +32,12 @@ const StyledSubFooter = styled.div`
         margin: 0;
         margin-top: 2rem;
     }
+    @media (max-width: 48em) {
+        padding: 4rem 2rem;
+        h1{
+            font-size: 2.6rem;
+        }
+    }
 `;
 
 const StyledLink = styled(Link)`
@@ -44,6 +52,9 @@ const LinkContainer = styled.div`
     flex-direction: row;
     justify-content: center;
     text-align: center;
+    @media (max-width: 48em) {
+        display: none;
+    }
 `;
 
 const StyledBtn = styled(Link)`
@@ -78,6 +89,14 @@ const subFooter = ({link1, content1, link2, content2, link3, content3}) =>{
                 <StyledLink to='/apache-skywalking'> Apache SkyWalking</StyledLink>.
                 The open source projects listed here are the result of our continued innovation in the cloud-native space.
             </p> 
+            <SelectBox
+                    items={[
+                        { value: 'Select tool', id: 1 },
+                        { value: 'Get Envoy', id: 2 },
+                        { value: 'Tetrate Istio Cloud Map Operator', id: 3 },
+                        { value: 'Tetrate Q', id: 3 }
+                    ]}
+                />
             <LinkContainer>
                 <StyledBtn to={link1}>
                     <button> {content1} </button>

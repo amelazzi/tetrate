@@ -19,7 +19,7 @@ import SubFooter from '../components/subFooter'
 const Sections = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    @media (max-width: 35em) {
+    @media (max-width: 48em) {
 		display: flex;
         flex-direction: column;
         justify-content: center;
@@ -35,6 +35,9 @@ const NxtArrowIcon = styled.div`
     img{
         width: 100%;
         object-fit: cover;
+    }
+    @media (max-width: 48em) {
+        display: none;
     }
 `;
 
@@ -57,7 +60,7 @@ const StyledSlider = styled(Slider)`
     background: white;
     position: relative;
     z-index: 0;
-    @media (max-width: 35em) {
+    @media (max-width: 48em) {
         display: none;
     }
 `;
@@ -66,7 +69,7 @@ const ResponsiveSlider = styled(Slider)`
     display: none;
     margin: 0rem;
     padding: 0rem;
-    @media (max-width: 35em) {
+    @media (max-width: 48em) {
         display: block;
     }
 `;
@@ -85,7 +88,7 @@ const Articles = styled.div`
     justify-content: space-between;
     align-items: center;
 
-    @media (max-width: 35em) {
+    @media (max-width: 48em) {
         padding: 2rem 0rem;
         margin-top: 2rem;
         flex-wrap: wrap;

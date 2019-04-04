@@ -38,9 +38,8 @@ const StyledHead = styled.div`
         font-weight: 200;
     }
 
-    @media (max-width: 35em) {
+    @media (max-width: 48em) {
 		text-align: center;
-        background-size: 210%;
         background-position: center 0rem;
 
         padding: 4rem 0rem;
@@ -74,7 +73,7 @@ const LogoContainer = styled.div`
         width: 100%;
         object-fit: cover;
     }
-    @media (max-width: 35em) {
+    @media (max-width: 48em) {
 		display: none;
     }
 `;
@@ -91,7 +90,7 @@ const SectionContainer = styled.div`
     margin-top: 10rem;
     padding: 0rem;
 
-    @media (max-width: 35em) {
+    @media (max-width: 48em) {
 		display: flex;
         flex-direction: column;
         justify-content: center;
@@ -123,7 +122,7 @@ const StyledSection = styled(Link)`
         cursor: pointer;
     }
 
-    @media (max-width: 35em) {
+    @media (max-width: 48em) {
 		padding: 2rem;
         :first-child{
             padding-top: 0rem;

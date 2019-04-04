@@ -23,7 +23,7 @@ const StyledSection = styled.div`
         margin: 0;
         margin-top: 1rem;
     }
-    @media (max-width: 35em) {
+    @media (max-width: 48em) {
         width: 48%;
         small{
             width: 100%;

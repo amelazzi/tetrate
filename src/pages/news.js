@@ -15,7 +15,7 @@ const ArticleContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding: 4rem;
-  @media (max-width: 35em) {
+  @media (max-width: 48em) {
     padding: 2rem;
     padding-bottom: 4rem;
   }
@@ -27,7 +27,7 @@ const BtnContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
 
-  @media (max-width: 35em) {
+  @media (max-width: 48em) {
     flex-direction: column;
   }
 `;
@@ -57,7 +57,7 @@ const PreviousBtn = styled(Link)`
           background: ${bleu};
           cursor: pointer;
       }
-      @media (max-width: 35em) {
+      @media (max-width: 48em) {
         width: 100%;
       }
     }

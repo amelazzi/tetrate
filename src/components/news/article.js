@@ -8,7 +8,7 @@ const StyledArticle = styled.div`
     flex-direction: column;
     padding: 4rem 0rem; 
     text-align: left;
-    @media (max-width: 35em) {
+    @media (max-width: 48em) {
         text-align: center;
     }
     border-bottom: 2px solid lightgray;

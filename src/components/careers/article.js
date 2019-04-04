@@ -11,7 +11,7 @@ const StyledArticle = styled.div`
     text-align: left;
     border-top: 2px solid lightgray;
 
-    @media (max-width: 35em) {
+    @media (max-width: 48em) {
         margin: 0rem;
     }
     
