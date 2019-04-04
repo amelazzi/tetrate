@@ -13,7 +13,7 @@ const MenuIcon = styled.img`
     :hover{
         cursor: pointer;
     }
-    @media (max-width: 48em) {
+    @media (max-width: 76.7em) {
 		display: block;
     }
 `;
@@ -115,7 +115,7 @@ class FancyModalButton extends React.Component {
                 <SubLink to='/tetrate-cloud-map'> TETRATE ISTIO CLOUD MAP OPERATOR</SubLink>
                 <SubLink to='/tetrateq'> TETRATE Q </SubLink>
           <StyledLink to='/resources'> Resources </StyledLink>
-          <StyledLink to='/'> Blog </StyledLink>
+          <StyledLink to='/blog'> Blog </StyledLink>
           <StyledH1 > About Us </StyledH1>
                 <SubLink to='/team'> Team </SubLink>
                 <SubLink to='/news'> News</SubLink>

@@ -17,7 +17,7 @@ const FadingBackground = styled(BaseModalBackground)`
 const StyledHeader = styled.div`
     font-size: 1.5rem;
     letter-spacing: 0.1rem;
-    padding: 0.2rem 4rem;
+    padding: 0rem 4rem;
     margin: 0;
     display: flex;
     justify-content: space-between;
@@ -28,7 +28,7 @@ const StyledHeader = styled.div`
         display: flex;
         align-items: center;
         text-transform: uppercase;
-        @media (max-width: 48em) {
+        @media (max-width: 76.7em) {
             display: none;
         }
     }
@@ -46,7 +46,7 @@ const StyledHeader = styled.div`
             cursor: pointer;
         }
     }
-    @media (max-width: 48em) {
+    @media (min-width: 320px) and (max-width: 480px) {
         padding: 0.2rem 2rem;
     }
 `;

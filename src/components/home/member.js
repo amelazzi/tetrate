@@ -23,7 +23,7 @@ const StyledSection = styled.div`
         margin: 0;
         margin-top: 1rem;
     }
-    @media (max-width: 48em) {
+    @media (min-width: 32em) and (max-width: 48em) {
         width: 48%;
         small{
             width: 100%;
@@ -42,7 +42,7 @@ const ImgContainer = styled.div`
     background: white;
     border-radius: 100%;
 
-    padding: 0.8rem;
+    padding: 0.6rem;
     margin-bottom: 2rem;
     
     img{

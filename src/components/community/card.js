@@ -22,6 +22,12 @@ const StyledCard = styled.div`
         width: 100%;
         object-fit: cover;
     }
+    @media (min-width: 320px) and (max-width: 48em) {
+      margin-top: 3rem;
+      :first-child{
+          margin-top: 1rem;
+      }
+    }
 
 `;
 

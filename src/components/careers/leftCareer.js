@@ -12,7 +12,7 @@ const StyledCareer = styled.div`
     align-items: center;
     padding: 4rem 8rem;
 
-    @media (max-width: 48em) {
+    @media (min-width: 320px) and (max-width: 48em) {
       flex-direction: column;
       border-bottom: 2px solid lightgray;
       :last-child{
@@ -62,7 +62,7 @@ const Content = styled.div`
     justify-content: flex-start;
     margin-left: 4rem;
     padding-right: 6rem;
-    @media (max-width: 48em) {
+    @media (min-width: 320px) and (max-width: 48em) {
         margin-left: 0rem;
         padding-right: 0rem;
         margin-top: 4rem;

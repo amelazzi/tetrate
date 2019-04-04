@@ -7,8 +7,9 @@ const StyledIntro = styled.div`
     text-align: center;
     p{
         color: gray;
-        font-size: 2.3rem;
+        font-size: 2.2rem;
         font-weight: 200;
+        line-height: 1.4;
         padding: 0rem 8rem;
         :first-child{
           margin-top: 0;
@@ -17,7 +18,7 @@ const StyledIntro = styled.div`
           margin-bottom: 0;
         }
     }
-    @media (max-width: 48em) {
+    @media (min-width: 32em) and  (max-width: 48em) {
       padding: 4rem 2rem;
       p{
         padding: 0;

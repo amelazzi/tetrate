@@ -8,6 +8,7 @@ const StyltedCArd = styled.div`
     background: white;
     width: 26.5rem;
     padding: 1rem;
+    padding-bottom: 4rem;
     box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
     display: flex;
     flex-direction: column;
@@ -15,11 +16,6 @@ const StyltedCArd = styled.div`
     text-align: center;
 
     margin: 1rem;
-
-    @media (max-width: 48em) {
-      width: 100%;
-      margin: 2rem 1rem;
-    }
 
     img{
         position: absolute;
@@ -46,13 +42,23 @@ const StyltedCArd = styled.div`
         padding: 0rem 4rem;
         font-weight: 300;
     }
+
+    @media (min-width: 32em) and  (max-width: 48em) {
+        width: 100%;
+        margin: 2rem 1rem;
+        img{
+            width: 97%;
+            height: 8rem;
+            object-fit: cover;
+        }
+    }
 `;
 
 const ProfilePic = styled.div`
-    max-width: 13rem;
-    max-height: 13rem;
-    min-width: 13rem;
-    min-height: 13rem;
+    max-width: 12rem;
+    max-height: 12rem;
+    min-width: 12rem;
+    min-height: 12rem;
 
     border-radius: 50%;
     margin-top: 1rem;
@@ -78,10 +84,10 @@ const SocialMedia = styled.div`
 `;
 
 const IconContainer = styled.div`
-    width: 2rem;
-    height: 2rem;
+    width: 1.8rem;
+    height: 1.8rem;
     background: lightgray;
-    margin: 1rem 0.5rem;
+    margin: 0.5rem;
     padding: 0.5rem;
 
     :hover{

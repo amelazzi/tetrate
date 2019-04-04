@@ -19,7 +19,14 @@ const StyledArticle = styled.div`
         object-fit: cover;
     }
 
-    @media (max-width: 48em) {
+    @media (min-width: 48.1em) and (max-width: 76.7em) {
+        width: auto;
+        height: 43rem;
+        margin: 1rem;
+        margin-top: 0;
+    }
+
+    @media (min-width: 32em) and (max-width: 48em) {
         position: static;
         width: 100%;
         height: 100%;
@@ -34,7 +41,7 @@ const Content = styled.div`
         color: gray;
         text-transform: uppercase;
         font-size: 1.6rem;
-        font-weight: 100;
+        font-weight: 300;
     }
     h1{
         color: black;
@@ -46,7 +53,7 @@ const Content = styled.div`
         color: gray; 
         font-size: 1.6rem;
         font-weight: 100;
-        line-height: 1.6;
+        line-height: 1.8;
     }
 `;
 
@@ -59,7 +66,7 @@ const ButtonWrap = styled.div`
     button{
         border: none;
         background: ${darkBleu};
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         padding: 1rem 4rem;
         letter-spacing: 1px;
         transition: .2s ease-in-out;
@@ -69,8 +76,12 @@ const ButtonWrap = styled.div`
             cursor: pointer;
         }
     }
+    
+    @media (min-width: 48.1em) and (max-width: 76.7em) {
+        margin-left: -2rem;
+    }
 
-    @media (max-width: 48em) {
+    @media (min-width: 32em) and (max-width: 48em) {
         position: static;
         margin-left: 0rem;
     }

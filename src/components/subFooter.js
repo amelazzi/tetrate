@@ -38,7 +38,8 @@ const StyledFooter = styled.div`
         }
     }
 
-    @media (max-width: 48em) {
+
+    @media (min-width: 32em) and (max-width: 48em) {
 		padding: 4rem 2rem;
         h1{
             margin: 0;

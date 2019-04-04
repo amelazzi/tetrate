@@ -13,7 +13,7 @@ const StyledHead = styled.div`
     background-position: 0rem;
 
     padding: 8rem 4rem;
-    @media (max-width: 48em) {
+    @media (min-width: 320px) and (max-width: 48em) {
       padding: 8rem 2rem;
     }
 

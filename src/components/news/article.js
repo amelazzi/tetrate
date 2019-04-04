@@ -8,9 +8,7 @@ const StyledArticle = styled.div`
     flex-direction: column;
     padding: 4rem 0rem; 
     text-align: left;
-    @media (max-width: 48em) {
-        text-align: center;
-    }
+    
     border-bottom: 2px solid lightgray;
     
     h1{
@@ -27,6 +25,13 @@ const StyledArticle = styled.div`
         color: black;
         font-weight: 200;
         line-height: 1.6;
+    }
+
+    @media (min-width: 32em) and (max-width: 48em) {
+        text-align: center;
+        h1{
+            font-size: 2.6rem;
+        }
     }
 `;
 

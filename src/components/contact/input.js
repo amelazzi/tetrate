@@ -25,6 +25,10 @@ const StyledInput = styled.input`
     :focus{
         border-color: ${bleu};
     }
+
+    @media (min-width: 32em) and (max-width: 48em) {
+        padding: 0.6rem 1.6rem;
+    }
 `;
 
 const Input = ({type, placeholder}) => (

@@ -23,7 +23,14 @@ const StyledTeam = styled.div`
         font-size: 3.3rem;
         font-weight: 300;
     }
-    @media (max-width: 48em) {
+
+    @media (min-width: 48.1em) and (max-width: 76.7em) {
+        h1{
+            padding: 0rem 8rem;
+        }
+    }
+
+    @media (min-width: 32em) and (max-width: 48em) {
         background-position: center;
         margin-top: 4rem;
         h1{
@@ -38,7 +45,13 @@ const Members = styled.div`
     flex-direction: row;
     justify-content: space-between;
 
-    @media (max-width: 48em) {
+    @media (min-width: 48.1em) and (max-width: 76.7em) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 0rem 5rem;
+    }
+
+    @media (min-width: 32em) and (max-width: 48em) {
         padding: 0rem 2rem;
         flex-wrap: wrap;
         justify-content: space-between;

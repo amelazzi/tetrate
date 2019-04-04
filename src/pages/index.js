@@ -19,10 +19,17 @@ import SubFooter from '../components/subFooter'
 const Sections = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    @media (max-width: 48em) {
+
+    @media (min-width: 48.1em) and (max-width: 76.7em) {
+        padding: 0rem 4rem;
+    }
+
+    @media (min-width: 32em) and (max-width: 48em) {
 		display: flex;
         flex-direction: column;
         justify-content: center;
+
+        margin-top: -4rem;
     }
 
 `;
@@ -36,7 +43,11 @@ const NxtArrowIcon = styled.div`
         width: 100%;
         object-fit: cover;
     }
-    @media (max-width: 48em) {
+    @media (min-width: 48.1em) and (max-width: 76.7em) {
+        margin-top: -34.55rem;
+        margin-left: 96%;
+    }
+    @media (min-width: 32em) and (max-width: 48em) {
         display: none;
     }
 `;
@@ -51,6 +62,10 @@ const BackArrowIcon = styled(NxtArrowIcon)`
         width: 100%;
         object-fit: cover;
     }
+    @media (min-width: 48.1em) and (max-width: 76.7em) {
+        margin-top: 26rem;
+        margin-left: 0.5rem;
+    }
 `;
 
 const StyledSlider = styled(Slider)`
@@ -60,7 +75,12 @@ const StyledSlider = styled(Slider)`
     background: white;
     position: relative;
     z-index: 0;
-    @media (max-width: 48em) {
+    @media (min-width: 48.1em) and (max-width: 76.7em) {
+        margin: 2rem 1rem;
+        margin-top: -4rem;
+        padding: 2rem;
+    }
+    @media (min-width: 32em) and (max-width: 48em) {
         display: none;
     }
 `;
@@ -69,7 +89,7 @@ const ResponsiveSlider = styled(Slider)`
     display: none;
     margin: 0rem;
     padding: 0rem;
-    @media (max-width: 48em) {
+    @media (min-width: 32em) and (max-width: 48em) {
         display: block;
     }
 `;
@@ -88,7 +108,14 @@ const Articles = styled.div`
     justify-content: space-between;
     align-items: center;
 
-    @media (max-width: 48em) {
+    @media (min-width: 48.1em) and (max-width: 76.7em) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 4rem 5rem;
+        padding-bottom: 3rem;
+    }
+
+    @media (min-width: 32em) and (max-width: 48em) {
         padding: 2rem 0rem;
         margin-top: 2rem;
         flex-wrap: wrap;

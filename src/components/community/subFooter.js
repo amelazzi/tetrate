@@ -32,7 +32,7 @@ const StyledSubFooter = styled.div`
         margin: 0;
         margin-top: 2rem;
     }
-    @media (max-width: 48em) {
+    @media (min-width: 32em) and (max-width: 48em) {
         padding: 4rem 2rem;
         h1{
             font-size: 2.6rem;
@@ -52,7 +52,7 @@ const LinkContainer = styled.div`
     flex-direction: row;
     justify-content: center;
     text-align: center;
-    @media (max-width: 48em) {
+    @media (min-width: 32em) and (max-width: 48em) {
         display: none;
     }
 `;

@@ -20,16 +20,22 @@ const StyledSection = styled.div`
         color: black !important;
         font-size: 2.5rem;
         font-weight: 300;
+        padding: 0rem 1rem;
+        margin: 0;
     }
     p{
         color: black;
         font-size: 1.6rem;
+        line-height: 1.8;
         font-weight: 300;
         margin: 0;
     }
-    @media (max-width: 48em) {
+    @media (min-width: 32em) and  (max-width: 48em) {
         border: none;
         margin: 0rem;
+        h1{
+            margin-top: 4rem !important;
+        }
     }
 
 `;

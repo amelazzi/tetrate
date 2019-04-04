@@ -15,8 +15,9 @@ const StyledHead = styled.div`
     position: relative;
 
     padding: 12rem 38rem 10rem 4rem;
-    @media (max-width: 48em) {
+    @media (min-width: 32em) and (max-width: 48em) {
       padding: 12rem 2rem;
+      padding-bottom: 10rem;
     }
 
     h1{

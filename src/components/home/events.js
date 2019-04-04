@@ -19,7 +19,14 @@ const StyledArticle = styled.div`
         object-fit: cover;
     }
 
-    @media (max-width: 48em) {
+    @media (min-width: 48.1em) and (max-width: 76.7em) {
+        width: auto;
+        height: 43rem;
+        margin: 1rem;
+        margin-top: 0;
+    }
+
+    @media (min-width: 32em) and (max-width: 48em) {
         position: static;
         width: 100%;
         height: 100%;
@@ -60,6 +67,12 @@ const Sponsored = styled.div`
         width: 16rem;
         margin-left: 1rem;
     }
+    @media (min-width: 48.1em) and (max-width: 76.7em) {
+        img{
+            width: 12rem;
+            margin-left: 1rem;
+        }
+    }
 `;
 
 const ButtonWrap = styled.div`
@@ -82,7 +95,7 @@ const ButtonWrap = styled.div`
         }
     }
 
-    @media (max-width: 48em) {
+    @media (min-width: 32em) and  (max-width: 48em) {
         position: static;
         margin-left: 0rem;
     }

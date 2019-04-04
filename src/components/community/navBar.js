@@ -38,7 +38,7 @@ const StyledNavBar = styled.nav`
             text-decoration: none;
         }
     }
-    @media (max-width: 48em) {
+    @media (min-width: 32em) and (max-width: 48em) {
       display: none;
     }
 `;

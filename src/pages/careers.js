@@ -16,7 +16,7 @@ import SubFooter from '../components/subFooter'
 
 const Content = styled.div`
     padding: 0rem 10rem;
-    @media (max-width: 48em) {
+    @media (min-width: 32em) and (max-width: 48em) {
         padding: 0rem 2rem;
     }
 `;
@@ -32,7 +32,7 @@ const StyledH1 = styled.h1`
     color: ${bleu};
     font-weight: 400;
     margin-bottom: 4rem;
-    @media (max-width: 48em) {
+    @media (min-width: 32em) and (max-width: 48em) {
         font-size: 2.6rem;
         font-weight: 300;
         margin: 0;

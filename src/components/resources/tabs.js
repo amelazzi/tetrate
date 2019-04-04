@@ -7,7 +7,7 @@ import SelectBox from '../../components/contact/selectOption'
 
 const StyledSelectBox = styled.div`
     display: none;
-    @media (max-width: 48em) {
+    @media (min-width: 32em) and (max-width: 48em) {
       display: block;
       margin: 2rem;
       margin-top: 4rem;
@@ -20,7 +20,7 @@ const TabsBtn = styled.div`
     flex-direction: row;
     justify-content: center;
 
-    @media (max-width: 48em) {
+    @media (min-width: 32em) and (max-width: 48em) {
       display: none;
     }
 
@@ -63,7 +63,7 @@ const TabsContent = styled.div`
     flex-wrap: wrap;
     padding: 3rem;
 
-    @media (max-width: 48em) {
+    @media (min-width: 32em) and  (max-width: 48em) {
       padding: 2rem 1rem;
       padding-top: 1rem;
       margin-top: -23rem;

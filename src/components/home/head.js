@@ -19,15 +19,15 @@ const StyledHead = styled.div`
     h1{
         margin-top: 2rem !important;
         margin-bottom: 0 !important;
-        font-size: 5rem;
-        font-weight: 400;
+        font-size: 4.8rem;
+        font-weight: 300;
         margin: 0;
     }
     h2{
         margin: 0;
         font-size: 3.4rem;
         color: ${bleu};
-        font-weight: 400;
+        font-weight: 300;
     }
     p{
         font-size: 2.2rem;
@@ -38,9 +38,15 @@ const StyledHead = styled.div`
         font-weight: 200;
     }
 
-    @media (max-width: 48em) {
+    @media (min-width: 48.1em) and (max-width: 76.7em) {
+        background-size: 170%;
+        background-position: center -2rem;
+    }
+
+    @media (min-width: 32em) and (max-width: 48em) {
 		text-align: center;
         background-position: center 0rem;
+        background-size: 150%;
 
         padding: 4rem 0rem;
 
@@ -67,13 +73,13 @@ const StyledHead = styled.div`
 `;
 
 const LogoContainer = styled.div`
-    width: 22rem;
+    width: 20rem;
     margin-top: 4.5rem;
     img{
         width: 100%;
         object-fit: cover;
     }
-    @media (max-width: 48em) {
+    @media (min-width: 32em) and  (max-width: 48em) {
 		display: none;
     }
 `;
@@ -87,10 +93,17 @@ const SectionContainer = styled.div`
     flex-direction: row;
     justify-content: center;
 
-    margin-top: 10rem;
+    margin-top: 12rem;
     padding: 0rem;
 
-    @media (max-width: 48em) {
+    @media (min-width: 48.1em) and (max-width: 76.7em) {
+        width: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0rem 4rem !important;
+    }
+
+    @media (min-width: 32em) and (max-width: 48em) {
 		display: flex;
         flex-direction: column;
         justify-content: center;
@@ -112,17 +125,16 @@ const StyledSection = styled(Link)`
         font-weight: 600;
     }
     small{
-        font-size: 1.7rem;
+        font-size: 1.6rem;
         line-height: 1.6;
     }
 
     :hover{
         text-decoration: none;
-        color: ${darkBleu};
         cursor: pointer;
     }
 
-    @media (max-width: 48em) {
+    @media (min-width: 32em) and  (max-width: 48em) {
 		padding: 2rem;
         :first-child{
             padding-top: 0rem;
@@ -161,21 +173,19 @@ const Head = () => {
                     <small> Better security </small>
                     <h3> Tetrate Q is here </h3>
                     <small> Learn about the new way 
-                        <br/> to do security.</small>
+                        to do security.</small>
                 </StyledSection>
                 <StyledSection to='/getenvoy'>
                     <small> Download </small>
                     <h3> GetEnvoy </h3>
                     <small> 
-                        The easiest way to get started with
-                        <br/> Enjoy
+                        The easiest way to get started with Enjoy
                     </small>
                 </StyledSection>
                 <StyledSection to='/contact'>
                     <small> Contact us to </small>
                     <h3> Request a demo </h3>
-                    <small> Let us show you the new way to
-                        <br/> manage your network </small>
+                    <small> Let us show you the new way to manage your network </small>
                 </StyledSection>
             </SectionContainer>
         </StyledHead>

@@ -6,7 +6,7 @@ import { darkBleu, bleu } from '../styles/colors';
 
 const StylesFooter = styled.div`
     background: ${darkBleu};
-    padding: 3rem;
+    padding: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,8 +23,9 @@ const StylesFooter = styled.div`
         font-weight: 200;
     }
 
-    @media (max-width: 48em) {
-		padding: 3rem 2rem;
+    @media (min-width: 32em) and (max-width: 48em) {
+		padding: 4rem 2rem;
+        padding-top: 3rem;
         p{
             margin: 0;
             margin-bottom: 1.6rem;
@@ -37,7 +38,10 @@ const MenuContent = styled.div`
     flex-direction: row;
     justify-content: center;
     width: 60%;
-    @media (max-width: 48em) {
+    @media (min-width: 48.1em) and (max-width: 76.7em) {
+        width: 80%;
+    }
+    @media (min-width: 32em) and  (max-width: 48em) {
         width: 100%;
         flex-wrap: wrap;
     }
@@ -57,7 +61,7 @@ const Content = styled.div`
     ul{
         list-style: none;
     }
-    @media (max-width: 48em) {
+    @media (min-width: 32em) and  (max-width: 48em) {
         width: 50%;
         margin-top: 3rem !important;
         :first-child, :nth-child(2){
@@ -86,7 +90,10 @@ const SocialMedia = styled.div`
     justify-content: flex-start;
     align-items: center;
     margin-top: 4rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+    @media (min-width: 48.1em) and (max-width: 76.7em) {
+        margin-bottom: 2rem;
+    }
 `;
 
 const IconContainer = styled.div`

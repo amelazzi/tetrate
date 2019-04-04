@@ -12,7 +12,7 @@ import { bleu } from "../styles/colors";
 
 const StyledContent = styled.div`
     padding: 4rem 14rem;
-    @media (max-width: 48em) {
+    @media (min-width: 32em) and (max-width: 48em) {
         padding: 4rem 0rem;
     }
 `;
@@ -23,7 +23,7 @@ const IntroPage = styled.div`
     padding: 0rem 22rem;
     padding-bottom: 4rem;
     box-sizing: border-box;
-    @media (max-width: 48em) {
+    @media (min-width: 32em) and (max-width: 48em) {
         padding: 0rem 2rem;
         padding-bottom: 4rem;
         h1{
@@ -56,7 +56,7 @@ const FormContainer = styled.div`
     display: flex;
     flex-direction:  row;
     justify-content: space-between;
-    @media (max-width: 48em) {
+    @media (min-width: 32em) and (max-width: 48em) {
         flex-direction:  column;
     }
     padding: 4rem 2rem;
@@ -65,7 +65,7 @@ const FormContainer = styled.div`
 
 const InfoContainer = styled.div`
     width: 42%;
-    @media (max-width: 48em) {
+    @media (min-width: 32em) and (max-width: 48em) {
         width: 100%;
         p{
             font-size: 1.8rem !important;
