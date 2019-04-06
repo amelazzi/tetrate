@@ -63,6 +63,10 @@ const TabsContent = styled.div`
     flex-wrap: wrap;
     padding: 3rem;
 
+    @media (min-width: 48.1em) and (max-width: 76.7em) {
+      margin-top: -4rem;
+    }
+
     @media (min-width: 32em) and  (max-width: 48em) {
       padding: 2rem 1rem;
       padding-top: 1rem;
