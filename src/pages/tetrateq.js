@@ -15,7 +15,7 @@ import SubFooter from "../components/community/subFooter"
 const Content = styled.div`
     padding: 0rem 14rem;
     padding-bottom: 4rem;
-    @media (min-width: 32em) and (max-width: 48em) {
+    @media (max-width: 76.7em) {
       padding: 0rem;
     }
 `;
@@ -26,6 +26,10 @@ const Cards = styled.div`
   justify-content: space-around;
   padding: 1rem;
   margin-top: 2rem;
+  @media (min-width: 48.1em) and (max-width: 76.7em) {
+      padding: 1rem 5rem;
+      margin-top: 0;
+  }
   @media (min-width: 32em) and (max-width: 48em) {
     display: flex;
     flex-direction: column;
@@ -38,6 +42,9 @@ const BtnContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   text-align: center;
+  @media (min-width: 48.1em) and (max-width: 76.7em) {
+      padding: 4rem 0rem;
+  }
   @media (min-width: 32em) and (max-width: 48em) {
     display: flex;
     flex-direction: column;
@@ -71,6 +78,9 @@ const StyledLink = styled(Link)`
             background: ${darkBleu};
             cursor: pointer;
         }
+    }
+    @media (min-width: 48.1em) and (max-width: 76.7em) {
+      margin-top: 2rem;
     }
     @media (min-width: 32em) and (max-width: 48em) {
       display: flex;

@@ -18,9 +18,6 @@ const Content = styled.div`
     @media (max-width: 76.7em) {
       padding: 0rem;
     }
-    @media (min-width: 32em) and (max-width: 48em) {
-      padding: 0rem;
-    }
 `;
 
 const Cards = styled.div`
