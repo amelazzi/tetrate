@@ -15,6 +15,9 @@ const StyledHead = styled.div`
     position: relative;
 
     padding: 12rem 38rem 10rem 4rem;
+    @media (min-width: 48.1em) and (max-width: 76.7em) {
+      padding: 12rem 4rem;
+    }
     @media (min-width: 32em) and (max-width: 48em) {
       padding: 12rem 2rem;
       padding-bottom: 10rem;
@@ -51,6 +54,9 @@ const StyledLink = styled(Link)`
 			background: ${bleu};
 			cursor: pointer;
 		}
+    @media (min-width: 48.1em) and (max-width: 76.7em) {
+        margin-bottom: 2rem;
+    }
 	}
 `;
 
