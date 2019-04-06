@@ -42,6 +42,10 @@ const StyltedCArd = styled.div`
         padding: 0rem 4rem;
         font-weight: 300;
     }
+    @media (min-width: 48.1em) and (max-width: 76.7em) {
+        width: auto;
+        margin: 1rem;
+    }
 
     @media (min-width: 32em) and  (max-width: 48em) {
         width: 100%;

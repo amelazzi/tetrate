@@ -40,6 +40,23 @@ const CardsContainer = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+    @media (min-width: 48.1em) and (max-width: 76.7em) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media (min-width: 32em) and (max-width: 48em) {
+        justify-content: center;
+    }
+`;
+
+const InvestorContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    @media (min-width: 48.1em) and (max-width: 76.7em) {
+        flex-wrap: nowrap;
+    }
     @media (min-width: 32em) and (max-width: 48em) {
         justify-content: center;
     }
@@ -110,9 +127,9 @@ const Team = () => (
             {Member}
         </CardsContainer>
         <StyledH1> Tetrate Investors </StyledH1>
-        <CardsContainer>
+        <InvestorContainer>
             {Invest}
-        </CardsContainer>
+        </InvestorContainer>
     </Content>
     <SubFooter title="Interested in a Career with Tetrate?"  content="Submit a Resume" link='/'/>
   </Layout>

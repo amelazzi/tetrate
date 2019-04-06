@@ -8,7 +8,7 @@ const StyledValue = styled.div`
     padding: 2rem;
     padding-top: 0rem;
     text-align: center;
-    width: 38%;
+    width: 37%;
     @media (min-width: 320px) and (max-width: 48em) {
         width: 100%;
         margin: 0;

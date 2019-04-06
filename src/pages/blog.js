@@ -17,6 +17,11 @@ const Content = styled.div`
     grid-template-columns: 2.8fr 1fr;
 
     padding: 4rem;
+    @media (max-width: 76.7em) {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 4rem;
+    }
 
     @media (min-width: 32em) and (max-width: 48em) {
         display: flex;
@@ -27,8 +32,9 @@ const Content = styled.div`
 
 const FilterSearch = styled.div`
     margin-left: 6rem;
-    @media (min-width: 32em) and (max-width: 48em) {
+    @media (max-width: 76.7em) {
         margin-left: 0;
+        margin-bottom: 4rem;
     }
     h3{
         font-size: 1.6rem;

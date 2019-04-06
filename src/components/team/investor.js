@@ -4,13 +4,16 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 const ImgContainer = styled.div`
-    max-width: 28.5rem;
-    max-height: 28.5rem;
-    min-width: 28.5rem;
-    min-height: 28.5rem;
+    width: 28.5rem;
+    height: 28.5rem;
 
     margin: 1rem;
     margin-top: -4rem;
+
+    @media (min-width: 48.1em) and (max-width: 76.7em) {
+        width: auto;
+        margin: -2rem 2rem;
+    }
     @media (min-width: 32em) and (max-width: 48em) {
         margin: 0rem;
     }

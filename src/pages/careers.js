@@ -16,6 +16,9 @@ import SubFooter from '../components/subFooter'
 
 const Content = styled.div`
     padding: 0rem 10rem;
+    @media (min-width: 48.1em) and (max-width: 76.7em) {
+        padding: 0rem;
+    }
     @media (min-width: 32em) and (max-width: 48em) {
         padding: 0rem 2rem;
     }
