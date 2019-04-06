@@ -55,7 +55,7 @@ const Content = styled.div`
         color: black; 
         font-size: 1.6rem;
         font-weight: 100;
-        line-height: 1.7;
+        line-height: 1.8;
         margin-bottom: 0;
     }
 `;

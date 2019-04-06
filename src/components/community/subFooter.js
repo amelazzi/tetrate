@@ -32,6 +32,11 @@ const StyledSubFooter = styled.div`
         margin: 0;
         margin-top: 2rem;
     }
+
+    @media (min-width: 48.1em) and (max-width: 76.7em) {
+        padding: 4rem 6rem;
+    }
+    
     @media (min-width: 32em) and (max-width: 48em) {
         padding: 4rem 2rem;
         h1{

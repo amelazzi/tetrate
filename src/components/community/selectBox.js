@@ -5,6 +5,9 @@ import { bleu } from '../../styles/colors';
 const StyledSelectBox = styled.div`
     position: relative;
     margin-top: 3.5rem;
+    @media (min-width: 48.1em){
+        display: none;
+    }
 `;
 
 const BoxContainer = styled.div`

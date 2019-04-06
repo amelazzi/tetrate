@@ -12,6 +12,11 @@ const StyledDiagram = styled.div`
         width: 100%;
         object-fit: cover;
     }
+
+    @media (min-width: 48.1em) and (max-width: 76.7em) {
+      padding: 0rem 4rem;
+    }
+
     @media (min-width: 32em) and (max-width: 48em) {
       padding: 0rem 2rem;
     }

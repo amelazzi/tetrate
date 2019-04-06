@@ -18,6 +18,14 @@ const StyledIntro = styled.div`
           margin-bottom: 0;
         }
     }
+
+    @media (min-width: 48.1em) and (max-width: 76.7em) {
+      padding: 4rem 16rem;
+      p{
+        padding: 0rem;
+      }
+    }
+
     @media (min-width: 32em) and  (max-width: 48em) {
       padding: 4rem 2rem;
       p{
