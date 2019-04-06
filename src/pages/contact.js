@@ -12,7 +12,7 @@ import { bleu } from "../styles/colors";
 
 const StyledContent = styled.div`
     padding: 4rem 14rem;
-    @media (min-width: 32em) and (max-width: 48em) {
+    @media (max-width: 76.7em) {
         padding: 4rem 0rem;
     }
 `;
@@ -56,11 +56,15 @@ const FormContainer = styled.div`
     display: flex;
     flex-direction:  row;
     justify-content: space-between;
+    padding: 4rem 2rem;
+    padding-bottom: 0rem;
+    @media (min-width: 48.1em) and (max-width: 76.7em) {
+        padding: 4rem 10rem;
+        padding-left: 6rem;
+    }
     @media (min-width: 32em) and (max-width: 48em) {
         flex-direction:  column;
     }
-    padding: 4rem 2rem;
-    padding-bottom: 0rem;
 `;
 
 const InfoContainer = styled.div`
