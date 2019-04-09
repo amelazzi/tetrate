@@ -49,15 +49,6 @@ const ValuesContainer = styled.div`
     flex-wrap: wrap;
 `;
 
-const Values = styled.div`
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    border-right: 2px solid ${bleu};
-    :last-child{
-        border: none;
-    }
-`;
 
 const ArticlesContainer = styled.div`
     display: flex;

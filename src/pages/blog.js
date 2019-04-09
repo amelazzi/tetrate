@@ -85,12 +85,6 @@ const PreviousBtn = styled(Link)`
     }
 `;
 
-const NextBtn = styled(PreviousBtn)`
-  button{
-    padding: 0.8rem;
-    padding-left: 3.5rem !important;
-  }
-`;
 
 const PrevIcon = styled.div`
   max-width: 0.8rem;
@@ -103,10 +97,6 @@ const PrevIcon = styled.div`
     width: 100%;
     object-fit: cover;
   }
-`;
-
-const NextIcon = styled(PrevIcon)`
-  margin-left: 1.6rem;
 `;
 
 const Blog = () => (

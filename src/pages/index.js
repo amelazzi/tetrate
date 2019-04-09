@@ -168,7 +168,7 @@ const IndexPage = () => (
             logo={require("../images/home/testimonies/intel.jpg")}/>
     </ResponsiveSlider>
     <BackArrowIcon>
-        <img src={require("../images/slider-next.png")} />
+        <img src={require("../images/slider-next.png")} alt="back" />
     </BackArrowIcon>
     <StyledSlider autoSlide={false}  showDots={false} cardsToShow={1}>
         <Testimonies>
@@ -205,7 +205,7 @@ const IndexPage = () => (
         </Testimonies>
     </StyledSlider>
     <NxtArrowIcon>
-        <img src={require("../images/slider-next.png")} />
+        <img src={require("../images/slider-next.png")} alt="next"/>
     </NxtArrowIcon>
     <Articles>
         <Article picture={require("../images/home/resources-paper-and-guides-graphic.jpg")}

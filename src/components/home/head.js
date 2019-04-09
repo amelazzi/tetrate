@@ -88,18 +88,14 @@ const SectionContainer = styled.div`
     background: rgba(190,226,241,.8);
     box-shadow: 0 -40px 40px 16px rgba(190,226,241,.8);
 
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 
     margin-top: 12rem;
-    padding: 0rem;
+    padding: 0rem 14rem;
 
     @media (min-width: 48.1em) and (max-width: 76.7em) {
-        width: auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
         padding: 0rem 4rem !important;
     }
 
@@ -116,7 +112,7 @@ const StyledSection = styled(Link)`
     text-align: center;
     color: ${darkBleu};
     margin: 4rem;
-    margin-top: 0rem;
+    margin-top: 1rem;
 
     h3{
         font-size: 3.2rem;

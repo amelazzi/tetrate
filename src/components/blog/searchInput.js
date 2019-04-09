@@ -57,7 +57,7 @@ const SearchInput = () => {
         <InputContainer>
             <StyledSearchInput type="text" placeholder="Search" />
             <IconContainer>
-                <img src={require("../../images/search-icon.png")} />
+                <img src={require("../../images/search-icon.png")} alt="search" />
             </IconContainer>
         </InputContainer>
     );
