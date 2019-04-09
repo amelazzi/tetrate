@@ -8,7 +8,6 @@ const StyledArticle = styled.div`
     position: relative;
     background: white;
     width: 26rem;
-    height: 42rem;
     padding: 1rem;
     box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
     @media (min-width: 32em) and (max-width: 48em) {
@@ -73,7 +72,7 @@ const StyledLink = styled(Link)`
     color: white;
 `;
 
-const Card = ({picture, type, title, content}) => {
+const Card = ({picture, type, title, content, link}) => {
     return(
         <StyledArticle>
             <img src={picture} alt='article icon' />
@@ -83,7 +82,7 @@ const Card = ({picture, type, title, content}) => {
                 <p> {content} </p>
                 <ButtonWrap>
                     <button>
-                        <StyledLink to='/'> Read </StyledLink>
+                        <StyledLink to={link}> Read </StyledLink>
                     </button>
                 </ButtonWrap>
             </Content>

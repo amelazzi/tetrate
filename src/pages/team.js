@@ -8,6 +8,7 @@ import { bleu } from "../styles/colors"
 
 import Head from '../components/head'
 import CardMember from '../components/team/cardMember'
+import CardAdvisor from '../components/team/cardAdvisor'
 import Investor from '../components/team/investor'
 import SubFooter from '../components/subFooter'
 
@@ -92,11 +93,72 @@ const Members = [
         name:'Taiki Ono', role: 'Engineer', detail: 'Envoy and Service Mesh Developer',
         github: 'https://github.com/taiki45', 
         linkedin: 'https://www.linkedin.com/in/taiki45/'},
+    {picture: require("../images/team/members/Tevah.jpg"),
+        name:'Tevah Platt', role: 'Communications Designer', detail: 'Writer and Journalist',
+        github: 'https://github.com/tevahp', 
+        linkedin: 'https://www.linkedin.com/in/tevahp'},
+    {picture: require("../images/team/members/Adityo.jpg"),
+        name:'Adityo Pratomo', role: 'UX Designer', detail: 'Digital Product Enthusiast',
+        github: 'https://github.com/lunchboxav'},
+    {picture: require("../images/team/members/Shriram.jpg"),
+        name:'Shriram Rajagopalan', role: 'Unprincipled Engineer', detail: 'Co-creator, Istio; Contributor, Envoy',
+        github: 'https://github.com/rshriram',
+        linkedin: 'https://www.linkedin.com/in/rshriram'},
+    {picture: require("../images/team/members/Devarajan-Ramaswamy.png"),
+        name:'Devarajan Ramaswamy', role: 'Engineer', detail: 'Service Mesh Developer; Contributor, Istio',
+        github: 'https://github.com/deva26',
+        linkedin: 'https://www.linkedin.com/in/prdeva/'},
+    {picture: require("../images/team/members/toad.jpg"),
+        name:'Gus Reiber', role: 'UX Lead', detail: 'Expert in UI/UX Vision & Innovation'},
+    {picture: require("../images/team/members/Sai.jpg"),
+        name:'Sai Sitharaman', role: 'Engineer', detail: 'Back-end and Distributed Systems Expert',
+        github: 'https://github.com/saigs',
+        linkedin: 'https://www.linkedin.com/in/saigs/'},
+    {picture: require("../images/team/members/Varun-Talwar.png"),
+        name:'Varun Talwar', role: 'CEO', detail: 'Co-creator, Istio, Founding PM, gRPC',
+        github: 'https://github.com/zinuga',
+        linkedin: 'https://www.linkedin.com/in/varuntalwar/'},
+    {picture: require("../images/team/members/LiamWhite.png"),
+        name:'Liam White', role: '¯\_(ツ)_/¯', detail: 'Core Contributor, Istio',
+        github: 'https://github.com/liamawhite'},
+    {picture: require("../images/team/members/WuSheng.jpeg"),
+        name:'Sheng Wu', role: 'Engineer', detail: 'Founder, Apache Skywalking',
+        github: 'https://github.com/wu-sheng',
+        linkedin: 'https://www.linkedin.com/in/wusheng1108/'},
+    {picture: require("../images/team/members/lizan.jpg"),
+        name:'Lizan Zhou', role: 'Engineer', detail: 'Core Maintainer, Envoy; Engineer, Istio, gRPC',
+        github: 'https://github.com/lizan'}
 ];
 
 const Member = Members.map((mbr) =>
     <CardMember key={mbr.name} picture={mbr.picture} name={mbr.name} role={mbr.role} 
         detail={mbr.detail} github={mbr.github} linkedin={mbr.linkedin} />
+);
+
+
+const Advisors = [ 
+    {picture: require("../images/team/advisors/Chris-Aniczszyk.png"),
+        name:'Chris Aniczszyk', detail: 'COO, CNCF'},
+    {picture: require("../images/team/advisors/Mark-Carter.jpeg"),
+        name:'Mark Carter', detail: 'Head of Platforms and Security at Tesla'},
+    {picture: require("../images/team/advisors/David-Eckstein.jpeg"),
+        name:'David Eckstein', detail: 'CFO, Menlo Security'},
+    {picture: require("../images/team/advisors/BrianJ-Lg.jpg"),
+        name:'Brian Johnson', detail: 'Ex-CISO, Lending Club; Ex-Security Lead, Netflix'},
+    {picture: require("../images/team/advisors/MattKlein.jpg"),
+        name:'Matt Klein', detail: 'Founder, Envoy'},
+    {picture: require("../images/team/advisors/Guru.jpg"),
+        name:'Guru Parulkar', detail: 'Executive Director, Stanford Labs'},
+    {picture: require("../images/team/advisors/AB.png"),
+        name:'A. B. Periasamy', detail: 'CEO, Minio.io'},
+    {picture: require("../images/team/advisors/Larry.jpg"),
+        name:'Larry Peterson', detail: 'CTO, Open Network Foundation'},
+    {picture: require("../images/team/advisors/Zulfiker.jpg"),
+        name:'Zulfikar Ramzan', detail: 'CTO, RSA'},
+]
+
+const Advisor = Advisors.map((adv) =>
+    <CardAdvisor key={adv.name} picture={adv.picture} name={adv.name} detail={adv.detail}/>
 );
 
 
@@ -124,7 +186,7 @@ const Team = () => (
         </CardsContainer>
         <StyledH1> Tetrate Advisors </StyledH1>
         <CardsContainer>
-            {Member}
+            {Advisor}
         </CardsContainer>
         <StyledH1> Tetrate Investors </StyledH1>
         <InvestorContainer>

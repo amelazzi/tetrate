@@ -4,6 +4,7 @@ import { bleu, gray, darkBleu } from '../../styles/colors'
 
 import Card from './card'
 import SelectBox from '../../components/contact/selectOption'
+import Event from '../../components/home/events'
 
 const StyledSelectBox = styled.div`
     display: none;
@@ -52,8 +53,12 @@ const TabsBtn = styled.div`
 
 const IconContainer = styled.div`
     width: 3rem;
-    height: 3rem;
     margin-right: 1rem;
+    img{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
 `;
 
 const TabsContent = styled.div`
@@ -74,6 +79,46 @@ const TabsContent = styled.div`
     }
 `;
 
+/*----------------------------- Variables -------------------------*/
+var paperPic = require("../../images/home/resources-paper-and-guides-graphic.jpg")
+var paperType = "PAPERS & GUIDES"
+const PapersGuides = [
+    {title:"Introducing getEnvoy",
+        content: "Tetrate provides certified, tested builds of Envoy proxy" },
+    {title:"Case Study: NAV’s Istio Deployment with Tetrate",
+        content: "See how Tetrate helps the Norwegian Labour and Welfare Administration (NAV) operationalize Istio." },
+    {title:"Istio on EKS",
+        content: "Learn how Istio can be installed in a Kubernetes cluster running on AWS using Amazon EKS, and steps to make your applications more resilient." },
+    {title:"SkyWalking v6 is Service Mesh ready",
+        content: "See the new features in SkyWalking v6, including Istio telemetry data." },
+]
+const PaperGuide = PapersGuides.map((pg) =>
+    <Card key={pg.title}
+        picture={paperPic} type={paperType} title={pg.title} content={pg.content}/>
+);
+
+var talksPic = require("../../images/home/resources-videos.jpg")
+var talksType = "TALKS & VIDEOS"
+const TalksVideos = [
+    {title:"An Overview of Istio Mesh",
+        content: "Istio: Weaving the Service Mesh. By Shriram Rajagopalan & Louis Ryan" },
+    {title:"Debugging Istio Networking",
+        content: "Liam White explains how to debug Istio to test reliability and functions of Istio components." },
+    {title:"Connecting, Managing, Observing, and Securing Services",
+        content: "Zack Butcher talks about how a service mesh helps with the transition from monoliths to microservices to empower the organization." },
+    {title:"GitOps for Istio",
+        content: "Learn how to manage Istio config like managing code. Varun Talwar's Kubecon Europe 2018 talk." },
+    {title:"Latency Analysis with Istio & OpenCensus",
+        content: "Learn how to do latency and hotspot analysis in a microservices environment with Istio and Envoy integrated with OpenCensus." },
+    {title:"Istio – The Packet’s-Eye View",
+        content: "A practical introduction to the operation of Istio and how it can impact your environment. Kubecon Seattle 2018 talk." },
+]
+const TalkVideo = TalksVideos.map((tv) =>
+    <Card key={tv.title}
+        picture={talksPic} type={talksType} title={tv.title} content={tv.content}/>
+);
+
+
 class Tabs extends Component {
     constructor(props) {
         super(props);
@@ -89,13 +134,19 @@ class Tabs extends Component {
                     <button onClick={() => this.setState({ activeTab: 1 })}> 
                         See All</button>
                     <button onClick={() => this.setState({ activeTab: 2 })}> 
-                        <IconContainer></IconContainer>
+                        <IconContainer>
+                            <img src={require("../../images/resources/papers-guides.png")} alt="icon" />
+                        </IconContainer>
                         Papers & Guides </button>
                     <button onClick={() => this.setState({ activeTab: 3 })}> 
-                        <IconContainer></IconContainer>
+                        <IconContainer>
+                            <img src={require("../../images/resources/youtube.png")} alt="icon" />
+                        </IconContainer>
                         Talks & Videos</button>
                     <button onClick={() => this.setState({ activeTab: 4 })}> 
-                        <IconContainer></IconContainer>
+                        <IconContainer>
+                            <img src={require("../../images/resources/event.png")} alt="icon" />
+                        </IconContainer>
                         Events </button>
                 </TabsBtn>
                 <StyledSelectBox>
@@ -112,40 +163,17 @@ class Tabs extends Component {
                 <div>
                     {this.state.activeTab === 1 ? (
                         <TabsContent>
-                            <Card picture={require("../../images/home/graphic-resources-events-servicemeshday.jpg")}
-                                type="EVENTS"
-                                title="Service Mesh Day Conference"
-                                content="Join the first ever industry conference on Service Mesh Technology"/>
-                            <Card picture={require("../../images/home/graphic-resources-events-servicemeshday.jpg")}
-                                type="EVENTS"
-                                title="Service Mesh Day Conference"
-                                content="Join the first ever industry conference on Service Mesh Technology"/>
+                            {PaperGuide}
+                            {TalkVideo}
                         </TabsContent>) : this.state.activeTab === 2?
                         (<TabsContent>
-                            <Card picture={require("../../images/home/graphic-resources-events-servicemeshday.jpg")}
-                                type="EVENTS"
-                                title="Service Mesh Day Conference"
-                                content="Join the first ever industry conference on Service Mesh Technology"/>
-                            <Card picture={require("../../images/home/graphic-resources-events-servicemeshday.jpg")}
-                                type="EVENTS"
-                                title="Service Mesh Day Conference"
-                                content="Join the first ever industry conference on Service Mesh Technology"/>
+                            {PaperGuide}
                         </TabsContent>):this.state.activeTab === 3?
                         ( <TabsContent>
-                            <Card picture={require("../../images/home/graphic-resources-events-servicemeshday.jpg")}
-                                type="EVENTS"
-                                title="Service Mesh Day Conference"
-                                content="Join the first ever industry conference on Service Mesh Technology"/>
-                            <Card picture={require("../../images/home/graphic-resources-events-servicemeshday.jpg")}
-                                type="EVENTS"
-                                title="Service Mesh Day Conference"
-                                content="Join the first ever industry conference on Service Mesh Technology"/>
+                            {TalkVideo}
                         </TabsContent>):
                         (<TabsContent>
-                            <Card picture={require("../../images/home/graphic-resources-events-servicemeshday.jpg")}
-                                type="EVENTS"
-                                title="Service Mesh Day Conference"
-                                content="Join the first ever industry conference on Service Mesh Technology"/>
+                            <Event/>
                         </TabsContent>
                         )}
                 </div>

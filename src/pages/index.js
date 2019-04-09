@@ -190,7 +190,7 @@ const IndexPage = () => (
             <Testimony content1='"Service meshes are integral to organizations as they begin cloud native evolution. I’m thrilled to see the launch of Tetrate to bring their broad service mesh expertise to the enterprise.'
                 strong='They have been pioneers in the enterprise service mesh space through their contributions to Envoy, Istio and the broader CNCF ecosystem."'
                 name="— Chris Aniszczyk, CTO/COO of Cloud Native Computing Foundation"
-                logo={require("../images/home/testimonies/Gcloud.png")}/>
+                logo={require("../images/home/testimonies/gcloud.png")}/>
         </Testimonies>
         <Testimonies>
             <Testimony 
