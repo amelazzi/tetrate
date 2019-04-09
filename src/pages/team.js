@@ -119,7 +119,7 @@ const Members = [
         github: 'https://github.com/zinuga',
         linkedin: 'https://www.linkedin.com/in/varuntalwar/'},
     {picture: require("../images/team/members/LiamWhite.png"),
-        name:'Liam White', role: '¯\_(ツ)_/¯', detail: 'Core Contributor, Istio',
+        name:'Liam White', role: '¯\\_(ツ)_/¯', detail: 'Core Contributor, Istio',
         github: 'https://github.com/liamawhite'},
     {picture: require("../images/team/members/WuSheng.jpeg"),
         name:'Sheng Wu', role: 'Engineer', detail: 'Founder, Apache Skywalking',

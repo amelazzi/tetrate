@@ -156,7 +156,7 @@ const IndexPage = () => (
         <Testimony content1='"Service meshes are integral to organizations as they begin cloud native evolution. I’m thrilled to see the launch of Tetrate to bring their broad service mesh expertise to the enterprise.'
             strong='They have been pioneers in the enterprise service mesh space through their contributions to Envoy, Istio and the broader CNCF ecosystem."'
             name="— Chris Aniszczyk, CTO/COO of Cloud Native Computing Foundation"
-            logo={require("../images/home/testimonies/GCloud.png")}/>
+            logo={require("../images/home/testimonies/gcloud.png")}/>
         <Testimony 
             strong='"Tetrate is at the forefront of the cloud-native movement – managing microservices at scale.'
             content2='The company’s leadership team is responsible for some of the most important innovations within the cloud-native space and we’re fortunate to partner with them to address this significant market need."'
