@@ -31,7 +31,7 @@ const Cards = styled.div`
       padding: 1rem 5rem;
   }
 
-  @media (min-width: 32em) and (max-width: 48em) {
+  @media   (max-width: 48em) {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -46,7 +46,7 @@ const BtnContainer = styled.div`
   @media (min-width: 48.1em) and (max-width: 76.7em) {
       padding: 4rem 0rem;
   }
-  @media (min-width: 32em) and (max-width: 48em) {
+  @media   (max-width: 48em) {
     display: flex;
     flex-direction: column;
     padding: 4rem 0rem;
@@ -85,7 +85,7 @@ const StyledLink = styled(Link)`
       margin-top: 2rem;
     }
 
-    @media (min-width: 32em) and  (max-width: 48em) {
+    @media    (max-width: 48em) {
       display: flex;
       flex-direction: column;
       margin-top: 2rem;

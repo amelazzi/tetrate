@@ -16,7 +16,7 @@ const Content = styled.div`
         font-weight: 200;
         line-height: 2.8rem;
     }
-    @media (min-width: 32em) and (max-width: 48em) {
+    @media   (max-width: 48em) {
 		padding: 4rem 2rem;
     }
 `;

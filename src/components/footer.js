@@ -23,7 +23,7 @@ const StylesFooter = styled.div`
         font-weight: 200;
     }
 
-    @media (min-width: 32em) and (max-width: 48em) {
+    @media   (max-width: 48em) {
 		padding: 4rem 2rem;
         padding-top: 3rem;
         p{
@@ -41,7 +41,7 @@ const MenuContent = styled.div`
     @media (min-width: 48.1em) and (max-width: 76.7em) {
         width: 80%;
     }
-    @media (min-width: 32em) and  (max-width: 48em) {
+    @media    (max-width: 48em) {
         width: 100%;
         flex-wrap: wrap;
     }
@@ -61,7 +61,7 @@ const Content = styled.div`
     ul{
         list-style: none;
     }
-    @media (min-width: 32em) and  (max-width: 48em) {
+    @media    (max-width: 48em) {
         width: 50%;
         margin-top: 3rem !important;
         :first-child, :nth-child(2){

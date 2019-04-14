@@ -23,7 +23,7 @@ const IntroPage = styled.div`
     padding: 0rem 22rem;
     padding-bottom: 4rem;
     box-sizing: border-box;
-    @media (min-width: 32em) and (max-width: 48em) {
+    @media   (max-width: 48em) {
         padding: 0rem 2rem;
         padding-bottom: 4rem;
         h1{
@@ -62,14 +62,14 @@ const FormContainer = styled.div`
         padding: 4rem 10rem;
         padding-left: 6rem;
     }
-    @media (min-width: 32em) and (max-width: 48em) {
+    @media   (max-width: 48em) {
         flex-direction:  column;
     }
 `;
 
 const InfoContainer = styled.div`
     width: 42%;
-    @media (min-width: 32em) and (max-width: 48em) {
+    @media   (max-width: 48em) {
         width: 100%;
         p{
             font-size: 1.8rem !important;

@@ -10,24 +10,26 @@ const StyledHead = styled.div`
     background-image: url(${backgroundImg});
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: 0rem 1rem;
+    background-attachment: fixed;
+    background-position: 0rem 8rem;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 
     h1{
         margin-top: 2rem !important;
         margin-bottom: 0 !important;
         font-size: 4.8rem;
-        font-weight: 300;
+        font-weight: 400;
         margin: 0;
     }
     h2{
         margin: 0;
         font-size: 3.4rem;
         color: ${bleu};
-        font-weight: 300;
+        font-weight: 400;
     }
     p{
         font-size: 2.2rem;
@@ -43,7 +45,7 @@ const StyledHead = styled.div`
         background-position: center -2rem;
     }
 
-    @media (min-width: 32em) and (max-width: 48em) {
+    @media (max-width: 48em) {
 		text-align: center;
         background-position: center 0rem;
         background-size: 150%;
@@ -79,7 +81,7 @@ const LogoContainer = styled.div`
         width: 100%;
         object-fit: cover;
     }
-    @media (min-width: 32em) and  (max-width: 48em) {
+    @media (max-width: 48em) {
 		display: none;
     }
 `;
@@ -99,11 +101,12 @@ const SectionContainer = styled.div`
         padding: 0rem 4rem !important;
     }
 
-    @media (min-width: 32em) and (max-width: 48em) {
+    @media (max-width: 48em) {
 		display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 0rem;
+        width: 100%;
     }
 `;
 
@@ -130,7 +133,7 @@ const StyledSection = styled(Link)`
         cursor: pointer;
     }
 
-    @media (min-width: 32em) and  (max-width: 48em) {
+    @media (max-width: 48em) {
 		padding: 2rem;
         :first-child{
             padding-top: 0rem;

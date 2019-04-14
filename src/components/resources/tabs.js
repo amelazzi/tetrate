@@ -8,7 +8,7 @@ import Event from '../../components/home/events'
 
 const StyledSelectBox = styled.div`
     display: none;
-    @media (min-width: 32em) and (max-width: 48em) {
+    @media   (max-width: 48em) {
       display: block;
       margin: 2rem;
       margin-top: 4rem;
@@ -21,7 +21,7 @@ const TabsBtn = styled.div`
     flex-direction: row;
     justify-content: center;
 
-    @media (min-width: 32em) and (max-width: 48em) {
+    @media   (max-width: 48em) {
       display: none;
     }
 
@@ -72,7 +72,7 @@ const TabsContent = styled.div`
       margin-top: -4rem;
     }
 
-    @media (min-width: 32em) and  (max-width: 48em) {
+    @media    (max-width: 48em) {
       padding: 2rem 1rem;
       padding-top: 1rem;
       margin-top: -23rem;

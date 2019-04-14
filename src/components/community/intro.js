@@ -26,7 +26,7 @@ const StyledIntro = styled.div`
       }
     }
 
-    @media (min-width: 32em) and  (max-width: 48em) {
+    @media    (max-width: 48em) {
       padding: 4rem 2rem;
       p{
         padding: 0;

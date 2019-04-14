@@ -27,7 +27,7 @@ const StyledArticle = styled.div`
         line-height: 1.6;
     }
 
-    @media (min-width: 32em) and (max-width: 48em) {
+    @media   (max-width: 48em) {
         text-align: center;
         h1{
             font-size: 2.6rem;

@@ -13,7 +13,8 @@ const StyledTeam = styled.div`
     background-image: url(${background});
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0rem;
+    background-attachment: fixed;
+    background-position: center;
     
     padding-top: 4rem;
     text-align: center;
@@ -30,7 +31,7 @@ const StyledTeam = styled.div`
         }
     }
 
-    @media (min-width: 32em) and (max-width: 48em) {
+    @media (max-width: 48em) {
         background-position: center;
         margin-top: 4rem;
         h1{
@@ -51,7 +52,7 @@ const Members = styled.div`
         padding: 0rem 5rem;
     }
 
-    @media (min-width: 32em) and (max-width: 48em) {
+    @media (max-width: 48em) {
         padding: 0rem 2rem;
         flex-wrap: wrap;
         justify-content: space-between;

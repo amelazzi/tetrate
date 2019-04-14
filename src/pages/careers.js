@@ -19,7 +19,7 @@ const Content = styled.div`
     @media (min-width: 48.1em) and (max-width: 76.7em) {
         padding: 0rem;
     }
-    @media (min-width: 32em) and (max-width: 48em) {
+    @media   (max-width: 48em) {
         padding: 0rem 2rem;
     }
 `;
@@ -35,7 +35,7 @@ const StyledH1 = styled.h1`
     color: ${bleu};
     font-weight: 400;
     margin-bottom: 4rem;
-    @media (min-width: 32em) and (max-width: 48em) {
+    @media   (max-width: 48em) {
         font-size: 2.6rem;
         font-weight: 300;
         margin: 0;

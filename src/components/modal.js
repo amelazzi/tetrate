@@ -9,7 +9,6 @@ const MenuIcon = styled.img`
     display: none;
     width: 4rem;
     height: 2.5rem;
-    margin-left: 24rem !important;
     :hover{
         cursor: pointer;
     }

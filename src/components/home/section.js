@@ -30,7 +30,7 @@ const StyledSection = styled.div`
         font-weight: 300;
         margin: 0;
     }
-    @media (min-width: 32em) and  (max-width: 48em) {
+    @media (max-width: 48em) {
         border: none;
         margin: 0rem;
         h1{

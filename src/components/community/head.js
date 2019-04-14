@@ -10,6 +10,7 @@ const StyledHead = styled.div`
     background-image: url(${props=>props.background});
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: 0rem;
 
     position: relative;
@@ -18,7 +19,7 @@ const StyledHead = styled.div`
     @media (min-width: 48.1em) and (max-width: 76.7em) {
       padding: 12rem 4rem;
     }
-    @media (min-width: 32em) and (max-width: 48em) {
+    @media   (max-width: 48em) {
       padding: 12rem 2rem;
       padding-bottom: 10rem;
     }

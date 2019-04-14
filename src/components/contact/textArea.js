@@ -5,7 +5,7 @@ import { bleu } from "../../styles/colors";
 const StyledTextArea = styled.textarea`
     width: 100%;
     height: 18rem;
-    @media (min-width: 32em) and (max-width: 48em) {
+    @media   (max-width: 48em) {
         height: 12rem;
     }
     padding: 1.6rem;

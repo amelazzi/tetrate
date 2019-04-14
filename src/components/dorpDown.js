@@ -7,7 +7,7 @@ import {
   DropdownMenu,
 } from 'styled-dropdown-component'
 
-import { lightBleu, darkBleu, bleu } from '../styles/colors';
+import { darkBleu, bleu } from '../styles/colors';
 
 
 const StyledButton = styled(Button)`
@@ -35,9 +35,8 @@ const StyledButton = styled(Button)`
 `;
 
 const StyledDropdownMenu = styled(DropdownMenu)`
-    background: ${lightBleu};
-    margin-top: 1.6rem !important;
     padding: 0;
+    padding-top: 1.6rem !important;
     border: none;
     border-radius: 0px;
 `;
@@ -64,11 +63,11 @@ class SimpleDropdown extends React.Component {
   render() {
     const { hidden } = this.state;
     return (
-        <Dropdown onMouseEnter={() => this.handleOpenDropdown()}>
+        <Dropdown onMouseEnter={() => this.handleOpenDropdown()} onMouseLeave={() => this.handleCloseDropdown()}>
             <StyledButton secondary dropdownToggle>
                 {this.props.text}
             </StyledButton>
-            <StyledDropdownMenu hidden={hidden} onMouseLeave={() => this.handleCloseDropdown()}>
+            <StyledDropdownMenu hidden={hidden}>
                 {this.props.args}
             </StyledDropdownMenu>
         </Dropdown>

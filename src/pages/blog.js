@@ -23,7 +23,7 @@ const Content = styled.div`
       padding: 4rem;
     }
 
-    @media (min-width: 32em) and (max-width: 48em) {
+    @media   (max-width: 48em) {
         display: flex;
         flex-direction: column-reverse;
         padding: 4rem 2rem;
@@ -46,7 +46,7 @@ const FilterSearch = styled.div`
 `;
 
 const Articles = styled.div`
-    @media (min-width: 32em) and (max-width: 48em) {
+    @media   (max-width: 48em) {
         padding: 4rem 0rem;
     }
 `;
@@ -77,7 +77,7 @@ const PreviousBtn = styled(Link)`
           background: ${bleu};
           cursor: pointer;
       }
-      @media (min-width: 32em) and  (max-width: 48em) {
+      @media    (max-width: 48em) {
           margin-top: -4rem;
           margin-left: 2rem;
           width: 92%;

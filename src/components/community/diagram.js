@@ -17,7 +17,7 @@ const StyledDiagram = styled.div`
       padding: 0rem 4rem;
     }
 
-    @media (min-width: 32em) and (max-width: 48em) {
+    @media   (max-width: 48em) {
       padding: 0rem 2rem;
     }
 `;

@@ -26,7 +26,7 @@ const StyledArticle = styled.div`
         margin-top: 0;
     }
 
-    @media (min-width: 32em) and (max-width: 48em) {
+    @media   (max-width: 48em) {
         position: static;
         width: 100%;
         height: 100%;
@@ -81,7 +81,7 @@ const ButtonWrap = styled.div`
         margin-left: -2rem;
     }
 
-    @media (min-width: 32em) and (max-width: 48em) {
+    @media   (max-width: 48em) {
         position: static;
         margin-left: 0rem;
     }

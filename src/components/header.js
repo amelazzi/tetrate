@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 import { DropdownItem } from 'styled-dropdown-component'
-import { darkBleu, bleu, blue } from '../styles/colors'
+import { lightBleu, darkBleu, bleu, blue } from '../styles/colors'
 
 import SimpleDropDown from './dorpDown'
 
@@ -46,7 +46,7 @@ const StyledHeader = styled.div`
             cursor: pointer;
         }
     }
-    @media (min-width: 320px) and (max-width: 480px) {
+    @media (max-width: 480px) {
         padding: 0.2rem 2rem;
     }
 `;
@@ -73,6 +73,7 @@ const StyledMenu = styled.div`
 
 
 const StyledDropdownItem = styled(DropdownItem)`
+    background: ${lightBleu};
     padding: 1.5rem;
     color: ${darkBleu};
     font-size: 1.4rem;

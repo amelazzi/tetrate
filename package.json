@@ -21,6 +21,7 @@
     "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0",
+    "react-scroll-parallax": "^2.1.2",
     "react-simple-checkbox": "^1.2.1",
     "react-styled-carousel": "^0.5.1",
     "styled-button-component": "^3.0.1",

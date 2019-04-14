@@ -15,7 +15,7 @@ const StyledSection = styled.div`
     }
     padding: 0rem 4rem;
     margin: 3rem 0rem;
-    @media (min-width: 32em) and (max-width: 48em) {
+    @media   (max-width: 48em) {
         margin: 0rem;
         margin-top: 4rem;
     }

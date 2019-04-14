@@ -12,7 +12,7 @@ const StyledForm = styled.div`
 position: relative;
     width: 50%;
     box-sizing: border-box;
-    @media (min-width: 32em) and (max-width: 48em) {
+    @media   (max-width: 48em) {
         width: 100%;
         margin-top: 4rem;
         padding: 2rem;
@@ -46,7 +46,7 @@ position: relative;
             background: ${darkBleu};
             cursor: pointer;
         }
-        @media (min-width: 32em) and (max-width: 48em) {
+        @media   (max-width: 48em) {
             width: 100%;
             padding: 2rem 4rem;
             margin-left: 0rem;
