@@ -20,6 +20,7 @@ const StyledHeader = styled.div`
     padding: 0rem 4rem;
     margin: 0;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     * {
         margin: 0;
@@ -53,9 +54,7 @@ const StyledHeader = styled.div`
 
 const StyledLogo = styled.div`
     margin: 0.8rem 0rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
 `;
 
 
@@ -133,10 +132,10 @@ const Header = () => {
                 <LogoContainer>
                     <img src={require("../images/logo/logo-text-right.png")} alt='logo'/>
                 </LogoContainer>
-                <ModalProvider backgroundComponent={FadingBackground}>
-                    <FancyModalButton />
-                </ModalProvider>
             </StyledLogo>
+            <ModalProvider backgroundComponent={FadingBackground}>
+                <FancyModalButton />
+            </ModalProvider>
             <StyledMenu>
                 <nav>
                     <Link to="/"> Home </Link>

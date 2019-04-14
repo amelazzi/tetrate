@@ -13,7 +13,7 @@ const MenuIcon = styled.img`
         cursor: pointer;
     }
     @media (max-width: 76.7em) {
-		display: block;
+		  display: block;
     }
 `;
 
