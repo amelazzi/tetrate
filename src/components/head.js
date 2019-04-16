@@ -18,7 +18,7 @@ const StyledHead = styled.div`
     h1{
         color: white;
         font-size: 5rem;
-        font-weight: 300;
+        font-weight: 400;
         margin: 0;
     }
     h2{

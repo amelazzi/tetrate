@@ -39,7 +39,7 @@ const Content = styled.div`
     h1{
         margin: 0;
         font-size: 3.2rem;
-        font-weight: 300;
+        font-weight: 400;
         margin-bottom: 1rem;
     }
     small{
