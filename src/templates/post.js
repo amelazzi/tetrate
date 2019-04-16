@@ -10,6 +10,14 @@ import { darkBleu, bleu } from '../styles/colors';
 const StyledPost = styled.div`
     padding: 4rem 14rem;
 
+    @media (min-width: 48.1em) and (max-width: 76.7em) {
+        padding: 4rem;
+    }
+
+    @media (max-width: 48em) {
+        padding: 4rem 2rem;
+    }
+
     small{
         display: flex;
         flex-direction: row;
@@ -87,9 +95,6 @@ const PreviousBtn = styled(Link)`
           cursor: pointer;
       }
       @media (max-width: 48em) {
-          margin-top: -4rem;
-          margin-left: 2rem;
-          width: 92%;
       }
     }
 `;

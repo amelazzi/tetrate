@@ -41,7 +41,7 @@ const MenuContent = styled.div`
     @media (min-width: 48.1em) and (max-width: 76.7em) {
         width: 80%;
     }
-    @media    (max-width: 48em) {
+    @media (max-width: 48em) {
         width: 100%;
         flex-wrap: wrap;
     }
