@@ -15,7 +15,7 @@ const StyltedCArd = styled.div`
     align-items: center;
     text-align: center;
 
-    margin: 1rem;
+    margin: 2rem;
 
     img{
         position: absolute;

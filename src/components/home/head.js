@@ -90,12 +90,12 @@ const SectionContainer = styled.div`
     background: rgba(190,226,241,.8);
     box-shadow: 0 -40px 40px 16px rgba(190,226,241,.8);
 
-    width: auto;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
     margin-top: 12rem;
-    padding: 0rem 14rem;
+    padding: 0;
 
     @media (min-width: 48.1em) and (max-width: 76.7em) {
         padding: 0rem 4rem !important;

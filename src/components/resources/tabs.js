@@ -64,7 +64,7 @@ const IconContainer = styled.div`
 const TabsContent = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 3rem;
 

@@ -40,7 +40,7 @@ const CardsContainer = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     @media (min-width: 48.1em) and (max-width: 76.7em) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -54,7 +54,7 @@ const InvestorContainer = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-around;
     @media (min-width: 48.1em) and (max-width: 76.7em) {
         flex-wrap: nowrap;
     }

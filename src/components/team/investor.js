@@ -8,7 +8,6 @@ const ImgContainer = styled.div`
     height: 28.5rem;
 
     margin: 1rem;
-    margin-top: -4rem;
 
     @media (min-width: 48.1em) and (max-width: 76.7em) {
         width: auto;

@@ -35,7 +35,6 @@ position: relative;
         padding: 1rem 4rem;
         margin: 0;
         margin-top: 1rem;
-        margin-left: 15rem;
         color: white;
         font-size: 1.6rem;
         font-weight: 600;

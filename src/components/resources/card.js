@@ -16,7 +16,7 @@ const StyledArticle = styled.div`
     display: flex;
     flex-direction: column;
 
-    margin: 1rem;
+    margin: 2rem;
 
     img{
         width: 100%;

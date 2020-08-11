@@ -107,7 +107,7 @@ const Articles = styled.div`
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
     @media (min-width: 48.1em) and (max-width: 76.7em) {
